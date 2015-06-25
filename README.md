@@ -1,2 +1,0 @@
-# MazeRunner
-Tuto infinyte runner
