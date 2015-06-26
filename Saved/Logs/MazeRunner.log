@@ -1,773 +1,658 @@
-﻿[2015.06.25-08.56.00:289][  0]Log file open, 06/25/15 10:56:00
-[2015.06.25-08.56.00:289][  0]LogInit:Display: Running engine for game: MazeRunner
-[2015.06.25-08.56.00:289][  0]LogInit:Display: RandInit(-2023026068) SRandInit(-2023026068).
-[2015.06.25-08.56.00:289][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-[2015.06.25-08.56.00:289][  0]LogStats: Stats thread started
-[2015.06.25-08.56.00:289][  0]LogInit: Version: 4.8.1-2591939+++depot+UE4-Releases+4.8
-[2015.06.25-08.56.00:289][  0]LogInit: API Version: 2579680
-[2015.06.25-08.56.00:289][  0]LogInit: Compiled (64-bit): Jun 18 2015 11:02:04
-[2015.06.25-08.56.00:289][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
-[2015.06.25-08.56.00:289][  0]LogInit: Build Configuration: Development
-[2015.06.25-08.56.00:289][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.8
-[2015.06.25-08.56.00:289][  0]LogInit: Command line: 
-[2015.06.25-08.56.00:289][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.8/Engine/Binaries/Win64/
-[2015.06.25-08.56.00:289][  0]LogInit: Rocket: 1
-[2015.06.25-08.56.00:304][  0]LogInit: Using libcurl 7.41.0
-[2015.06.25-08.56.00:304][  0]LogInit:  - built for x86_64-pc-win32
-[2015.06.25-08.56.00:304][  0]LogInit:  - supports SSL with WinSSL
-[2015.06.25-08.56.00:304][  0]LogInit:  - other features:
-[2015.06.25-08.56.00:304][  0]LogInit:      CURL_VERSION_SSL
-[2015.06.25-08.56.00:304][  0]LogInit:      CURL_VERSION_IPV6
-[2015.06.25-08.56.00:304][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2015.06.25-08.56.00:304][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2015.06.25-08.56.00:304][  0]LogInit:      CURL_VERSION_IDN
-[2015.06.25-08.56.00:304][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2015.06.25-08.56.00:304][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
-[2015.06.25-08.56.00:304][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2015.06.25-08.56.00:304][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2015.06.25-08.56.00:304][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
-[2015.06.25-08.56.00:318][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
-[2015.06.25-08.56.00:337][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
-[2015.06.25-08.56.00:347][  0]LogInit: Object subsystem initialized
-[2015.06.25-08.56.00:348][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'TranslucentSortAxis = (X=0.000000,Y=-1.000000,Z=0.000000)'
-[2015.06.25-08.56.00:348][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.06.25-08.56.00:348][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleRule = ShortestSide'
-[2015.06.25-08.56.00:348][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.06.25-08.56.00:348][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleCurve = (EditorCurveData=(Keys=),ExternalCurve=None)'
-[2015.06.25-08.56.00:348][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
-[2015.06.25-08.56.00:349][  0]LogInit: Selected Device Profile: [Windows]
-[2015.06.25-08.56.00:349][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2015.06.25-08.56.00:359][  0]LogInit: Computer: CATOPSYS-DEV-06
-[2015.06.25-08.56.00:359][  0]LogInit: User: ihadjiat
-[2015.06.25-08.56.00:359][  0]LogInit: CPU Page size=4096, Cores=4
-[2015.06.25-08.56.00:359][  0]LogInit: High frequency timer resolution =3.919570 MHz
-[2015.06.25-08.56.00:359][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2015.06.25-08.56.00:359][  0]LogMemory: Platform Memory Stats for Windows
-[2015.06.25-08.56.00:359][  0]LogMemory: Process Physical Memory: 50.36 MB used, 50.36 MB peak
-[2015.06.25-08.56.00:359][  0]LogMemory: Process Virtual Memory: 26.39 MB used, 26.39 MB peak
-[2015.06.25-08.56.00:359][  0]LogMemory: Physical Memory: 5554.54 MB used, 16282.96 MB total
-[2015.06.25-08.56.00:359][  0]LogMemory: Virtual Memory: 285.87 MB used, 8388608.00 MB total
-[2015.06.25-08.56.00:399][  0]LogTextLocalizationManager: The requested culture ('fr_FR') has no localization data; falling back to 'en' for localization and internationalization data.
-[2015.06.25-08.56.00:643][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:ContentBrowser, Key:ImportAssetToolTip):
+﻿[2015.06.26-09.31.29:870][  0]Log file open, 06/26/15 11:31:29
+[2015.06.26-09.31.29:870][  0]LogInit:Display: Running engine for game: MazeRunner
+[2015.06.26-09.31.29:870][  0]LogInit:Display: RandInit(257591649) SRandInit(257591649).
+[2015.06.26-09.31.29:870][  0]LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
+[2015.06.26-09.31.29:870][  0]LogStats: Stats thread started
+[2015.06.26-09.31.29:870][  0]LogInit: Version: 4.8.1-2591939+++depot+UE4-Releases+4.8
+[2015.06.26-09.31.29:870][  0]LogInit: API Version: 2579680
+[2015.06.26-09.31.29:870][  0]LogInit: Compiled (64-bit): Jun 18 2015 11:02:04
+[2015.06.26-09.31.29:870][  0]LogInit: Compiled with Visual C++: 18.00.21005.01
+[2015.06.26-09.31.29:870][  0]LogInit: Build Configuration: Development
+[2015.06.26-09.31.29:870][  0]LogInit: Branch Name: ++depot+UE4-Releases+4.8
+[2015.06.26-09.31.29:870][  0]LogInit: Command line: 
+[2015.06.26-09.31.29:870][  0]LogInit: Base directory: C:/Program Files/Epic Games/4.8/Engine/Binaries/Win64/
+[2015.06.26-09.31.29:870][  0]LogInit: Rocket: 1
+[2015.06.26-09.31.29:884][  0]LogInit: Using libcurl 7.41.0
+[2015.06.26-09.31.29:884][  0]LogInit:  - built for x86_64-pc-win32
+[2015.06.26-09.31.29:884][  0]LogInit:  - supports SSL with WinSSL
+[2015.06.26-09.31.29:884][  0]LogInit:  - other features:
+[2015.06.26-09.31.29:884][  0]LogInit:      CURL_VERSION_SSL
+[2015.06.26-09.31.29:884][  0]LogInit:      CURL_VERSION_IPV6
+[2015.06.26-09.31.29:884][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2015.06.26-09.31.29:884][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2015.06.26-09.31.29:884][  0]LogInit:      CURL_VERSION_IDN
+[2015.06.26-09.31.29:885][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2015.06.26-09.31.29:885][  0]LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+[2015.06.26-09.31.29:885][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2015.06.26-09.31.29:885][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2015.06.26-09.31.29:885][  0]LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+[2015.06.26-09.31.29:897][  0]LogOnline:Warning: No default platform service specified for OnlineSubsystem
+[2015.06.26-09.31.29:913][  0]LogInit: Presizing for 0 objects not considered by GC, pre-allocating 0 bytes.
+[2015.06.26-09.31.29:921][  0]LogInit: Object subsystem initialized
+[2015.06.26-09.31.29:922][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'TranslucentSortAxis = (X=0.000000,Y=-1.000000,Z=0.000000)'
+[2015.06.26-09.31.29:923][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.06.26-09.31.29:923][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleRule = ShortestSide'
+[2015.06.26-09.31.29:923][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.06.26-09.31.29:923][  0]LogConsoleResponse:Warning: Skipping Unknown console variable: 'UIScaleCurve = (EditorCurveData=(Keys=),ExternalCurve=None)'
+[2015.06.26-09.31.29:923][  0]LogConsoleResponse:Warning:   Found in ini file 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Config/Windows/Engine.ini', in section '[/Script/Engine.RendererSettings]'
+[2015.06.26-09.31.29:924][  0]LogInit: Selected Device Profile: [Windows]
+[2015.06.26-09.31.29:924][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2015.06.26-09.31.29:946][  0]LogInit: Computer: CATOPSYS-DEV-06
+[2015.06.26-09.31.29:946][  0]LogInit: User: ihadjiat
+[2015.06.26-09.31.29:946][  0]LogInit: CPU Page size=4096, Cores=4
+[2015.06.26-09.31.29:946][  0]LogInit: High frequency timer resolution =3.919560 MHz
+[2015.06.26-09.31.29:946][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2015.06.26-09.31.29:946][  0]LogMemory: Platform Memory Stats for Windows
+[2015.06.26-09.31.29:946][  0]LogMemory: Process Physical Memory: 50.54 MB used, 50.54 MB peak
+[2015.06.26-09.31.29:946][  0]LogMemory: Process Virtual Memory: 24.53 MB used, 24.53 MB peak
+[2015.06.26-09.31.29:946][  0]LogMemory: Physical Memory: 4508.36 MB used, 16282.96 MB total
+[2015.06.26-09.31.29:946][  0]LogMemory: Virtual Memory: 284.93 MB used, 8388608.00 MB total
+[2015.06.26-09.31.29:984][  0]LogTextLocalizationManager: The requested culture ('fr_FR') has no localization data; falling back to 'en' for localization and internationalization data.
+[2015.06.26-09.31.30:229][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:ContentBrowser, Key:ImportAssetToolTip):
 Localization Resource: (C:/Program Files/Epic Games/4.8/Engine/Content/Localization/Editor/en/Editor.locres) Source String Hash: (-630476809) Localized String: (Import to {0}...)
 Localization Resource: (C:/Program Files/Epic Games/4.8/Engine/Content/Localization/Editor/en/Editor.locres) Source String Hash: (1271782899) Localized String: (Imports an asset from file to this folder.)
-[2015.06.25-08.56.01:249][  0]LogD3D11RHI: Found D3D11 adapter 0: ATI FirePro V(FireGL V) Graphics Adapter (Feature Level 11_0)
-[2015.06.25-08.56.01:249][  0]LogD3D11RHI: Adapter has 4078MB of dedicated video memory, 0MB of dedicated system memory, and 3840MB of shared system memory, 3 output[s]
-[2015.06.25-08.56.01:249][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
-[2015.06.25-08.56.01:255][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2015.06.25-08.56.01:280][  0]LogD3D11RHI: Async texture creation disabled: no driver support
-[2015.06.25-08.56.01:293][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2015.06.25-08.56.02:177][  0]LogTemp:Display: Loaded TP DesktopTargetPlatform
-[2015.06.25-08.56.02:194][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2015.06.25-08.56.02:212][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2015.06.25-08.56.02:230][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2015.06.25-08.56.02:250][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2015.06.25-08.56.02:266][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2015.06.25-08.56.02:282][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2015.06.25-08.56.02:298][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2015.06.25-08.56.02:314][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2015.06.25-08.56.02:330][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2015.06.25-08.56.02:345][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2015.06.25-08.56.02:361][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2015.06.25-08.56.02:418][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2015.06.25-08.56.02:433][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2015.06.25-08.56.02:449][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2015.06.25-08.56.02:468][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2015.06.25-08.56.02:468][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2015.06.25-08.56.02:716][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2015.06.25-08.56.02:801][  0]LogDerivedDataCache: Loaded boot cache 0.09s 53MB C:/Users/ihadjiat.PRIV.000/AppData/Local/UnrealEngine/4.8/DerivedDataCache/Boot.ddc.
-[2015.06.25-08.56.02:801][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/ihadjiat.PRIV.000/AppData/Local/UnrealEngine/4.8/DerivedDataCache/Boot.ddc
-[2015.06.25-08.56.02:802][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2015.06.25-08.56.02:802][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2015.06.25-08.56.02:802][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2015.06.25-08.56.02:802][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2015.06.25-08.56.02:953][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2015.06.25-08.56.02:964][  0]LogDerivedDataCache: Using Local data cache path C:/Users/ihadjiat.PRIV.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2015.06.25-08.56.03:267][  0]LogInit: Selected Device Profile: [Windows]
-[2015.06.25-08.56.03:277][  0]ImportText (ComponentSweepMultiTests): Missing closing parenthesis: (RootShapeAsset="/Engine/BasicShapes/Cube.Cube",ShapeType="TriggerCapsule",HitResult=(Time=0.50,Location=(X=-100.000015,Y=0.0,Z=100.000015),ImpactPoint=(X=-50.0,Y=0.0,Z=50.0),Normal=(X=-1.0,Y=-0.0,Z=0.0),ImpactNormal=(X=0.0,Y=0.0,Z=1.0),TraceStart=(X=-200.0,Y=0.0,Z=200.0),TraceEnd=(X=0.0,Y=0.0,Z=0.0))
-[2015.06.25-08.56.03:278][  0]ImportText (LineTraceSingleByChannelTests): Missing closing parenthesis: (RootShapeAsset="/Engine/BasicShapes/Cube.Cube",HitResult=(Time=0.50,Location=(X=-100.000015,Y=0.0,Z=100.000015),ImpactPoint=(X=-50.0,Y=0.0,Z=50.0),Normal=(X=-1.0,Y=-0.0,Z=0.0),ImpactNormal=(X=0.0,Y=0.0,Z=1.0),TraceStart=(X=-200.0,Y=0.0,Z=200.0),TraceEnd=(X=0.0,Y=0.0,Z=0.0))
-[2015.06.25-08.56.03:310][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2015.06.25-08.56.03:310][  0]LogMeshUtilities: No automatic mesh merging module available
-[2015.06.25-08.56.03:875][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2015.06.25-08.56.05:091][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2015.06.25-08.56.05:531][  0]SourceControl: Info Source control is disabled
-[2015.06.25-08.56.05:531][  0]SourceControl: Info Source control is disabled
-[2015.06.25-08.56.05:543][  0]SourceControl: Info Source control is disabled
-[2015.06.25-08.56.05:555][  0]SourceControl: Info Source control is disabled
-[2015.06.25-08.56.05:855][  0]LogObj: 26273 objects as part of root set at end of initial load.
-[2015.06.25-08.56.05:855][  0]LogUObjectAllocator: 5409248 out of 0 bytes used by permanent object pool.
-[2015.06.25-08.56.05:937][  0]LogEngine: Initializing Engine...
-[2015.06.25-08.56.05:940][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.6.0.0
-[2015.06.25-08.56.05:941][  0]LogHMD:Warning: SteamVR failed to initialize.  Error: 110
-[2015.06.25-08.56.06:132][  0]LogAIModule: Creating AISystem for world NewWorld
-[2015.06.25-08.56.06:166][  0]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-08.56.06:202][  0]LogInit: FAudioDevice initialized.
-[2015.06.25-08.56.06:251][  0]LogDerivedDataCache: Saved boot cache 0.05s 53MB C:/Users/ihadjiat.PRIV.000/AppData/Local/UnrealEngine/4.8/DerivedDataCache/Boot.ddc.
-[2015.06.25-08.56.06:262][  0]LogInit: Texture streaming: Disabled
-[2015.06.25-08.56.06:291][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
-[2015.06.25-08.56.06:291][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.8.1-2591939+++depot+UE4-Releases+4.8
-[2015.06.25-08.56.06:291][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId d5bdeaa6483860f643998eb7fbf661da|6176f649f1174023a271b9b929452cb0|6f943df1-ac3d-4304-bc90-3ae20687ab72
-[2015.06.25-08.56.06:291][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
-[2015.06.25-08.56.06:322][  0]LogInit: Transaction tracking system initialized
-[2015.06.25-08.56.06:473][  0]BlueprintLog: New page: Editor Load
-[2015.06.25-08.56.06:511][  0]LogAssetRegistry: FAssetRegistry took 0.0105 seconds to start up
-[2015.06.25-08.56.06:511][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
-[2015.06.25-08.56.07:306][  0]LogConsoleManager:Warning: Console variable 'r.VSync' wasn't set ('GameSetting' has a lower priority than 'SystemSettingsIni')
-[2015.06.25-08.56.07:306][  0]LogConsoleResponse:Display: 
-[2015.06.25-08.56.07:418][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2015.06.25-08.56.07:653][  0]SourceControl: Info Source control is disabled
-[2015.06.25-08.56.07:654][  0]Cmd: MAP LOAD FILE="D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.06.25-08.56.07:654][  0]LightingResults: New page: Lighting Build
-[2015.06.25-08.56.07:668][  0]MapCheck: New page: Map Check
-[2015.06.25-08.56.07:668][  0]LightingResults: New page: Lighting Build
-[2015.06.25-08.56.07:682][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001F890B80
-[2015.06.25-08.56.09:961][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2015.06.25-08.56.09:970][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.06.25-08.56.10:052][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2015.06.25-08.56.10:104][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 52.246ms to complete.
-[2015.06.25-08.56.10:104][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 2.451
-[2015.06.25-08.56.10:419][  0]LogCollectionManager: Loaded 0 collections in 0.002300 seconds
-[2015.06.25-08.56.10:428][  0]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 1792 classes and 301 folders.
-[2015.06.25-08.56.10:543][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2015.06.25-08.56.10:573][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2015.06.25-08.56.10:593][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
-[2015.06.25-08.56.10:665][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2015.06.25-08.56.10:669][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2015.06.25-08.56.10:689][  0]LogLoad: Full Startup: 12.82 seconds (BP compile: 0.99 seconds)
-[2015.06.25-08.56.10:767][  0]LogContentStreaming: Texture pool size is 0.000000MB
-[2015.06.25-08.56.10:903][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2015.06.25-08.56.11:137][  0]LogRenderer: Reallocating scene render targets to support 1208x680 (Frame:2).
-[2015.06.25-08.56.11:679][  9]LogAssetRegistry: Asset discovery search completed in 5.1791 seconds
-[2015.06.25-08.56.14:405][283]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-08.56.14:415][283]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-08.56.14:662][283]Cmd: MAP LOAD FILE="D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Maps/Level2.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2015.06.25-08.56.14:663][283]LightingResults: New page: Lighting Build
-[2015.06.25-08.56.14:681][283]LoadErrors: New page: Loading map: Level2.umap
-[2015.06.25-08.56.14:681][283]MapCheck: New page: Map Check
-[2015.06.25-08.56.14:681][283]LightingResults: New page: Lighting Build
-[2015.06.25-08.56.14:699][283]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000EACDF80
-[2015.06.25-08.56.14:791][283]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-08.56.14:821][283]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2015.06.25-08.56.14:847][283]Cmd: MAP CHECKDEP NOCLEARLOG
-[2015.06.25-08.56.14:900][283]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 52.99ms to complete.
-[2015.06.25-08.56.14:901][283]LogFileHelpers: Loading map 'Level2' took 0.240
-[2015.06.25-08.56.16:126][405]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.06.25-08.56.16:128][405]PIE: New page: PIE session: Level2 (Jun 25, 2015, 12:56:16 PM)
-[2015.06.25-08.56.16:129][405]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-08.56.16:131][405]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001817s)
-[2015.06.25-08.56.16:132][405]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-08.56.16:132][405]LogPlayLevel: PIE: World Init took: (0.001230s)
-[2015.06.25-08.56.16:132][405]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003269s)
-[2015.06.25-08.56.16:132][405]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-08.56.16:195][405]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-08.56.16:204][405]LogInit: FAudioDevice initialized.
-[2015.06.25-08.56.16:251][405]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-08.56.16:255][405]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-10.56.16
-[2015.06.25-08.56.16:255][405]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-08.56.16:255][405]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-08.56.16:256][405]LogWorld: Bringing up level for play took: 0.001840
-[2015.06.25-08.56.16:291][405]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.366
-[2015.06.25-08.57.01:360][838]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000E527880
-[2015.06.25-09.07.37:920][660]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-09.07.37:920][660]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
-[2015.06.25-09.07.37:954][660]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/Level2' took 0.034
-[2015.06.25-09.07.37:958][660]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner] ([1] browsable assets)...
-[2015.06.25-09.07.37:979][660]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner.BP_FloorTile_Corner]
-[2015.06.25-09.07.37:979][660]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner]
-[2015.06.25-09.07.38:002][660]LogSavePackage: Save=22.241726ms
-[2015.06.25-09.07.38:002][660]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_Corner_Auto16FA04B79471D4959BAC01D8ED7405972.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner_Auto1.uasset'
-[2015.06.25-09.07.38:015][660]LogFileHelpers: Auto-saving content packages took 0.060
-[2015.06.25-09.07.58:613][722]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.06.25-09.07.58:728][722]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Enums/RenderToTexture_Enum.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
-[2015.06.25-09.07.59:908][722]LogRenderer: Reallocating scene render targets to support 1208x1024 (Frame:2594).
-[2015.06.25-09.08.22:668][989]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-09.08.22:668][989]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
-[2015.06.25-09.08.22:750][989]LogMetaData: Removing '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.BP_FloorTile_RightCorner:UserConstructionScript.K2Node_FunctionEntry_140' ref from Metadata '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner.PackageMetaData'
-[2015.06.25-09.08.22:751][989]LogMetaData: Removing '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.SKEL_BP_FloorTile_RightCorner_C' ref from Metadata '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner.PackageMetaData'
-[2015.06.25-09.08.22:751][989]LogMetaData: Removing '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.BP_FloorTile_RightCorner_C' ref from Metadata '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner.PackageMetaData'
-[2015.06.25-09.08.22:751][989]LogMetaData: Removing '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.BP_FloorTile_RightCorner:EventGraph.K2Node_Event_24' ref from Metadata '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner.PackageMetaData'
-[2015.06.25-09.08.22:751][989]LogMetaData: Removing '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.BP_FloorTile_RightCorner:EventGraph.K2Node_Event_25' ref from Metadata '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner.PackageMetaData'
-[2015.06.25-09.08.22:751][989]LogMetaData: Removing '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.BP_FloorTile_RightCorner:EventGraph.K2Node_Event_26' ref from Metadata '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner.PackageMetaData'
-[2015.06.25-09.08.22:897][989]LogSavePackage: Save=21.842447ms
-[2015.06.25-09.08.22:897][989]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_RightCorner07E570694DF3CB52E30634AFC5A992FE.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.uasset'
-[2015.06.25-09.09.09:677][193]BlueprintLog: New page: Compile BP_FloorTile_RightCorner
-[2015.06.25-09.09.09:744][193]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-09.09.09:744][193]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
-[2015.06.25-09.09.09:814][193]BlueprintEditorCompileResults: Info [0791.95] Compile of BP_FloorTile_RightCorner successful! [in 137 ms]
-[2015.06.25-09.17.39:062][797]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/Level2' took 0.051
-[2015.06.25-09.17.39:069][797]LogSavePackage: Save=1.015417ms
-[2015.06.25-09.17.39:069][797]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_Corner_Auto20E5034E9432DC0FAB765378EEFCF9ACB.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Corner_Auto2.uasset'
-[2015.06.25-09.17.39:073][797]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner] ([1] browsable assets)...
-[2015.06.25-09.17.39:094][797]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.BP_FloorTile_RightCorner]
-[2015.06.25-09.17.39:094][797]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner]
-[2015.06.25-09.17.39:188][797]LogSavePackage: Save=20.482603ms
-[2015.06.25-09.17.39:188][797]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_RightCorner_Auto201B3AF284B1915BA6E1ED8B50719638C.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner_Auto2.uasset'
-[2015.06.25-09.17.39:189][797]LogFileHelpers: Auto-saving content packages took 0.126
-[2015.06.25-11.48.41:432][320]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-11.48.41:432][320]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
-[2015.06.25-11.50.41:702][696]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/Level2' took 0.062
-[2015.06.25-11.50.41:708][696]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile] ([1] browsable assets)...
-[2015.06.25-11.50.41:729][696]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile.BP_FloorTile]
-[2015.06.25-11.50.41:729][696]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile]
-[2015.06.25-11.50.41:861][696]LogSavePackage: Save=106.708389ms
-[2015.06.25-11.50.41:861][696]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_Auto3E5D7560F462A5D291835C7834BC92D81.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Auto3.uasset'
-[2015.06.25-11.50.41:880][696]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner] ([1] browsable assets)...
-[2015.06.25-11.50.41:901][696]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.BP_FloorTile_RightCorner]
-[2015.06.25-11.50.41:901][696]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner]
-[2015.06.25-11.50.41:930][696]LogSavePackage: Save=24.951462ms
-[2015.06.25-11.50.41:930][696]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_RightCorner_Auto38D33B21E4A6DBFE6F9A2E6875732FD5A.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner_Auto3.uasset'
-[2015.06.25-11.50.41:931][696]LogFileHelpers: Auto-saving content packages took 0.227
-[2015.06.25-12.02.19:066][ 31]BlueprintLog: New page: Compile BP_FloorTile_RightCorner
-[2015.06.25-12.02.19:212][ 31]BlueprintEditorCompileResults: Info [1181.41] Compile of BP_FloorTile_RightCorner successful! [in 145 ms]
-[2015.06.25-12.03.22:807][993]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-12.03.22:807][993]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
-[2015.06.25-12.04.40:338][446]BlueprintLog: New page: Compile BP_FloorTile_LeftCorner
-[2015.06.25-12.04.40:518][446]BlueprintEditorCompileResults: Info [1322.71] Compile of BP_FloorTile_LeftCorner successful! [in 180 ms]
-[2015.06.25-12.04.59:576][771]BlueprintLog: New page: Compile BP_FloorTile_RightCorner
-[2015.06.25-12.04.59:729][771]BlueprintEditorCompileResults: Info [1341.92] Compile of BP_FloorTile_RightCorner successful! [in 153 ms]
-[2015.06.25-12.05.00:451][808]LogSavePackage: Save=32.132607ms
-[2015.06.25-12.05.00:451][808]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_RightCorner0E0D3AC74B420C9FCAAC98884A219A7C.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/BP_FloorTile_RightCorner.uasset'
-[2015.06.25-12.05.19:673][922]LogActor:Warning: GameNetworkManager /Engine/Transient.World_7:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.06.39:742][484]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-12.06.39:743][484]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
-[2015.06.25-12.06.39:807][484]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/Level2' took 0.065
-[2015.06.25-12.06.39:813][484]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonBP/Blueprints/RunGameMode] ([1] browsable assets)...
-[2015.06.25-12.06.39:813][484]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/RunGameMode]
-[2015.06.25-12.06.39:873][484]LogSavePackage: Save=55.060631ms
-[2015.06.25-12.06.39:873][484]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/RunGameMode_Auto4CF5ACDBB478A06CD63716CAFFC1C8BDD.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/RunGameMode_Auto4.uasset'
-[2015.06.25-12.06.39:878][484]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile] ([1] browsable assets)...
-[2015.06.25-12.06.39:878][484]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile]
-[2015.06.25-12.06.39:967][484]LogSavePackage: Save=84.055138ms
-[2015.06.25-12.06.39:967][484]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_Auto4189D68DB4282ABFF61C455895E77CED5.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Auto4.uasset'
-[2015.06.25-12.06.39:972][484]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner] ([1] browsable assets)...
-[2015.06.25-12.06.39:994][484]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner.BP_FloorTile_LeftCorner]
-[2015.06.25-12.06.39:994][484]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner]
-[2015.06.25-12.06.40:035][484]LogSavePackage: Save=39.768139ms
-[2015.06.25-12.06.40:035][484]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_LeftCorner_Auto4D45688D9432BFF538CFC77B91FE128B4.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner_Auto4.uasset'
-[2015.06.25-12.06.40:035][484]LogFileHelpers: Auto-saving content packages took 0.227
-[2015.06.25-12.10.10:998][223]BlueprintLog: New page: Compile RunGameMode
-[2015.06.25-12.10.11:039][223]LogBlueprint:Error: [compiler RunGameMode] Error Could not find a function named "GetAttachTransform" in 'RunGameMode_C'.
-Make sure 'RunGameMode_C' has been compiled for  Get Attach Transform 
-[2015.06.25-12.10.11:392][223]LogBlueprint:Warning: [compiler RunGameMode] Warning [1653.58] Compile of RunGameMode failed. 1 Fatal Issue(s) 0 Warning(s) [in 394 ms]
-[2015.06.25-12.10.11:392][223]BlueprintEditorCompileResults:Error: Error Could not find a function named "GetAttachTransform" in 'RunGameMode_C'.
-Make sure 'RunGameMode_C' has been compiled for  Get Attach Transform 
-[2015.06.25-12.10.11:392][223]BlueprintEditorCompileResults:Warning: Warning [1653.58] Compile of RunGameMode failed. 1 Fatal Issue(s) 0 Warning(s) [in 394 ms]
-[2015.06.25-12.10.54:563][476]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/Blueprints/RunGameMode" FILE="D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset" SILENT=true
-[2015.06.25-12.10.54:621][476]LogSavePackage: Save=52.981323ms
-[2015.06.25-12.10.54:621][476]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/RunGameModeCBF81F37437F6FBC5181589241F9502F.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset'
-[2015.06.25-12.10.55:759][559]BlueprintLog: New page: Compile RunGameMode
-[2015.06.25-12.10.55:802][559]LogBlueprint:Error: [compiler RunGameMode] Error Could not find a function named "GetAttachTransform" in 'RunGameMode_C'.
-Make sure 'RunGameMode_C' has been compiled for  Get Attach Transform 
-[2015.06.25-12.10.56:006][559]LogBlueprint:Warning: [compiler RunGameMode] Warning [1698.19] Compile of RunGameMode failed. 1 Fatal Issue(s) 0 Warning(s) [in 246 ms]
-[2015.06.25-12.10.56:006][559]BlueprintEditorCompileResults:Error: Error Could not find a function named "GetAttachTransform" in 'RunGameMode_C'.
-Make sure 'RunGameMode_C' has been compiled for  Get Attach Transform 
-[2015.06.25-12.10.56:006][559]BlueprintEditorCompileResults:Warning: Warning [1698.19] Compile of RunGameMode failed. 1 Fatal Issue(s) 0 Warning(s) [in 246 ms]
-[2015.06.25-12.11.43:734][247]BlueprintLog: New page: Compile RunGameMode
-[2015.06.25-12.11.44:050][247]BlueprintEditorCompileResults: Info [1746.23] Compile of RunGameMode successful! [in 314 ms]
-[2015.06.25-12.16.55:386][706]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/Level2' took 0.055
-[2015.06.25-12.16.55:392][706]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonBP/Blueprints/RunGameMode] ([1] browsable assets)...
-[2015.06.25-12.16.55:392][706]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/RunGameMode]
-[2015.06.25-12.16.55:451][706]LogSavePackage: Save=54.030926ms
-[2015.06.25-12.16.55:451][706]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/RunGameMode_Auto555EBE9E3450E786B26DA6D8DF0156732.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/RunGameMode_Auto5.uasset'
-[2015.06.25-12.16.55:456][706]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile] ([1] browsable assets)...
-[2015.06.25-12.16.55:476][706]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile.BP_FloorTile]
-[2015.06.25-12.16.55:476][706]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile]
-[2015.06.25-12.16.55:571][706]LogSavePackage: Save=89.563393ms
-[2015.06.25-12.16.55:571][706]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_Auto5F7A0269E4F05C09D8AA9F289AEF8DEC9.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Auto5.uasset'
-[2015.06.25-12.16.55:584][706]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner] ([1] browsable assets)...
-[2015.06.25-12.16.55:605][706]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner.BP_FloorTile_LeftCorner]
-[2015.06.25-12.16.55:605][706]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner]
-[2015.06.25-12.16.55:644][706]LogSavePackage: Save=37.434464ms
-[2015.06.25-12.16.55:644][706]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_LeftCorner_Auto53620FFF743071A8DA07530BAACE5CA74.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner_Auto5.uasset'
-[2015.06.25-12.16.55:645][706]LogFileHelpers: Auto-saving content packages took 0.257
-[2015.06.25-12.39.51:466][284]BlueprintLog: New page: Compile RunGameMode
-[2015.06.25-12.39.51:585][284]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-12.39.51:585][284]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
-[2015.06.25-12.39.51:809][284]BlueprintEditorCompileResults: Info [3434.00] Compile of RunGameMode successful! [in 342 ms]
-[2015.06.25-12.39.55:774][598]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.06.25-12.39.55:775][598]PIE: New page: PIE session: Level2 (Jun 25, 2015, 4:39:55 PM)
-[2015.06.25-12.39.55:775][598]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.39.55:777][598]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001784s)
-[2015.06.25-12.39.55:778][598]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.39.55:778][598]LogPlayLevel: PIE: World Init took: (0.001358s)
-[2015.06.25-12.39.55:778][598]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003403s)
-[2015.06.25-12.39.55:864][598]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-12.39.55:872][598]LogInit: FAudioDevice initialized.
-[2015.06.25-12.39.55:916][598]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.39.55:916][598]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.39.55:916][598]LoadErrors:Error: Error /Game/ThirdPersonBP/Blueprints/RunGameMode : Can't find file for asset. /Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner
-[2015.06.25-12.39.55:927][598]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.39.55:927][598]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.39.55:928][598]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.39.55:932][598]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.39.55
-[2015.06.25-12.39.55:932][598]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.39.55:932][598]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.39.55:932][598]LogWorld: Bringing up level for play took: 0.001813
-[2015.06.25-12.39.55:962][598]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.102
-[2015.06.25-12.40.24:396][267]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000039477600
-[2015.06.25-12.40.26:975][468]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.06.25-12.40.26:975][468]PIE: New page: PIE session: Level2 (Jun 25, 2015, 4:40:26 PM)
-[2015.06.25-12.40.26:975][468]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.40.26:977][468]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001837s)
-[2015.06.25-12.40.26:978][468]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.40.26:978][468]LogPlayLevel: PIE: World Init took: (0.001321s)
-[2015.06.25-12.40.26:979][468]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003396s)
-[2015.06.25-12.40.27:063][468]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-12.40.27:071][468]LogInit: FAudioDevice initialized.
-[2015.06.25-12.40.27:104][468]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.40.27:107][468]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.40.27
-[2015.06.25-12.40.27:107][468]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.40.27:107][468]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.40.27:108][468]LogWorld: Bringing up level for play took: 0.001841
-[2015.06.25-12.40.27:137][468]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 -0.723
-[2015.06.25-12.41.09:995][959]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000030E70CC0
-[2015.06.25-12.43.46:016][  0]BlueprintLog: New page: Compile RunGameMode
-[2015.06.25-12.43.46:137][  0]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
-[2015.06.25-12.43.46:137][  0]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
-[2015.06.25-12.43.46:355][  0]BlueprintEditorCompileResults: Info [3668.54] Compile of RunGameMode successful! [in 339 ms]
-[2015.06.25-12.45.00:601][310]BlueprintLog: New page: Compile RunGameMode
-[2015.06.25-12.45.00:789][310]BlueprintEditorCompileResults: Info [3742.98] Compile of RunGameMode successful! [in 187 ms]
-[2015.06.25-12.45.03:093][455]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.06.25-12.45.03:093][455]PIE: New page: PIE session: Level2 (Jun 25, 2015, 4:45:03 PM)
-[2015.06.25-12.45.03:093][455]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.45.03:095][455]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002223s)
-[2015.06.25-12.45.03:096][455]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.45.03:097][455]LogPlayLevel: PIE: World Init took: (0.001258s)
-[2015.06.25-12.45.03:097][455]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003674s)
-[2015.06.25-12.45.03:183][455]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-12.45.03:191][455]LogInit: FAudioDevice initialized.
-[2015.06.25-12.45.03:234][455]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.45.03:235][455]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.45.03:245][455]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.45.03:245][455]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.45.03:246][455]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.45.03:250][455]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.45.03
-[2015.06.25-12.45.03:250][455]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.45.03:250][455]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.45.03:250][455]LogWorld: Bringing up level for play took: 0.001859
-[2015.06.25-12.45.03:271][455]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 -0.595
-[2015.06.25-12.46.13:643][542]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000033F9DD00
-[2015.06.25-12.46.49:357][954]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/Level2' took 0.053
-[2015.06.25-12.46.49:363][954]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonBP/Blueprints/RunGameMode] ([1] browsable assets)...
-[2015.06.25-12.46.49:363][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/RunGameMode]
-[2015.06.25-12.46.49:439][954]LogSavePackage: Save=69.293312ms
-[2015.06.25-12.46.49:439][954]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/RunGameMode_Auto6FE08267A42AA545B6CCB939A48D9E148.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/RunGameMode_Auto6.uasset'
-[2015.06.25-12.46.49:445][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile] ([1] browsable assets)...
-[2015.06.25-12.46.49:465][954]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile.BP_FloorTile]
-[2015.06.25-12.46.49:465][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile]
-[2015.06.25-12.46.49:565][954]LogSavePackage: Save=94.908371ms
-[2015.06.25-12.46.49:565][954]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_Auto6DA9992514E049C264AF7739E80B68B1A.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Auto6.uasset'
-[2015.06.25-12.46.49:571][954]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner] ([1] browsable assets)...
-[2015.06.25-12.46.49:592][954]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner.BP_FloorTile_LeftCorner]
-[2015.06.25-12.46.49:592][954]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner]
-[2015.06.25-12.46.49:631][954]LogSavePackage: Save=37.784756ms
-[2015.06.25-12.46.49:631][954]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_LeftCorner_Auto6AE8922B3427159D6F2EAA8B9E2930E0A.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner_Auto6.uasset'
-[2015.06.25-12.46.49:631][954]LogFileHelpers: Auto-saving content packages took 0.273
-[2015.06.25-12.51.06:507][793]BlueprintLog: New page: Compile BP_FloorTile
-[2015.06.25-12.51.06:596][793]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampDown_C_243' (it may have been removed)
-[2015.06.25-12.51.06:701][793]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampUp_C_247' (it may have been removed)
-[2015.06.25-12.51.06:799][793]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_LeftCorner_C_251' (it may have been removed)
-[2015.06.25-12.51.06:908][793]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RightCorner_C_255' (it may have been removed)
-[2015.06.25-12.51.07:390][793]BlueprintEditorCompileResults: Info [4109.57] Compile of BP_FloorTile successful! [in 882 ms]
-[2015.06.25-12.51.28:001][258]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2721.EdGraphPin_26030''
-[2015.06.25-12.51.28:001][258]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2728.EdGraphPin_26047''
-[2015.06.25-12.51.28:001][258]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_56.EdGraphPin_26041''
-[2015.06.25-12.51.28:002][258]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2726.EdGraphPin_26033''
-[2015.06.25-12.51.28:002][258]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2727.EdGraphPin_26037''
-[2015.06.25-12.51.28:003][258]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_IfThenElse_56.EdGraphPin_26042''
-[2015.06.25-12.51.28:003][258]LogProperty:Warning: ObjectProperty /Script/Engine.EdGraphPin:LinkedTo.LinkedTo: unresolved reference to 'EdGraphPin'K2Node_CallFunction_2728.EdGraphPin_26045''
-[2015.06.25-12.51.48:317][540]BlueprintLog: New page: Compile BP_FloorTile
-[2015.06.25-12.51.48:424][540]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampDown_C_277' (it may have been removed)
-[2015.06.25-12.51.48:542][540]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampUp_C_281' (it may have been removed)
-[2015.06.25-12.51.48:640][540]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_LeftCorner_C_285' (it may have been removed)
-[2015.06.25-12.51.48:747][540]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RightCorner_C_289' (it may have been removed)
-[2015.06.25-12.51.49:224][540]BlueprintEditorCompileResults: Info [4151.41] Compile of BP_FloorTile successful! [in 906 ms]
-[2015.06.25-12.51.53:646][881]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2015.06.25-12.51.54:522][946]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.06.25-12.51.54:522][946]PIE: New page: PIE session: Level2 (Jun 25, 2015, 4:51:54 PM)
-[2015.06.25-12.51.54:523][946]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.51.54:525][946]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001811s)
-[2015.06.25-12.51.54:525][946]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.51.54:526][946]LogPlayLevel: PIE: World Init took: (0.001309s)
-[2015.06.25-12.51.54:526][946]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003299s)
-[2015.06.25-12.51.54:612][946]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-12.51.54:621][946]LogInit: FAudioDevice initialized.
-[2015.06.25-12.51.54:664][946]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.51.54:664][946]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.51.54:674][946]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.51.54:675][946]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.51.54:676][946]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.51.54:679][946]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.51.54
-[2015.06.25-12.51.54:679][946]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.51.54:680][946]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.51.54:680][946]LogWorld: Bringing up level for play took: 0.001839
-[2015.06.25-12.51.54:715][946]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.844
-[2015.06.25-12.52.10:496][952]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003BB1B920
-[2015.06.25-12.53.28:121][382]BlueprintLog: New page: Pre-PIE auto-recompile
-[2015.06.25-12.53.28:155][382]LogPlayLevel: [PIE] Compiling BP_FloorTile before PIE...
-[2015.06.25-12.53.28:263][382]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampDown_C_301' (it may have been removed)
-[2015.06.25-12.53.28:364][382]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampUp_C_305' (it may have been removed)
-[2015.06.25-12.53.28:464][382]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_LeftCorner_C_309' (it may have been removed)
-[2015.06.25-12.53.28:573][382]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RightCorner_C_313' (it may have been removed)
-[2015.06.25-12.53.28:942][382]LogPlayLevel: [PIE] Compiling RunGameMode before PIE...
-[2015.06.25-12.53.29:079][382]LogPlayLevel: [PIE] Compiling BP_FloorTile_RampDown before PIE...
-[2015.06.25-12.53.29:165][382]LogPlayLevel: [PIE] Compiling BP_FloorTile_RampUp before PIE...
-[2015.06.25-12.53.29:260][382]LogPlayLevel: [PIE] Compiling BP_FloorTile_RightCorner before PIE...
-[2015.06.25-12.53.29:368][382]LogPlayLevel: [PIE] Compiling BP_FloorTile_LeftCorner before PIE...
-[2015.06.25-12.53.29:561][382]LogPlayLevel: PIE:  Blueprint regeneration took 1439 ms (6 blueprints)
-[2015.06.25-12.53.29:561][382]PIE: New page: PIE session: Level2 (Jun 25, 2015, 4:53:29 PM)
-[2015.06.25-12.53.29:561][382]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.53.29:564][382]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002459s)
-[2015.06.25-12.53.29:564][382]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.53.29:565][382]LogPlayLevel: PIE: World Init took: (0.001227s)
-[2015.06.25-12.53.29:565][382]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003878s)
-[2015.06.25-12.53.29:652][382]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-12.53.29:660][382]LogInit: FAudioDevice initialized.
-[2015.06.25-12.53.29:706][382]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.53.29:706][382]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.53.29:716][382]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.53.29:716][382]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.53.29:717][382]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.53.29:721][382]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.53.29
-[2015.06.25-12.53.29:721][382]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.53.29:721][382]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.53.29:721][382]LogWorld: Bringing up level for play took: 0.001885
-[2015.06.25-12.53.29:749][382]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 1.875
-[2015.06.25-12.53.29:805][383]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.070774 > MaxSimulationTimeStep (0.050) for 'RunCharacter_C_9'
-[2015.06.25-12.53.32:373][537]Cmd: RestartLevel
-[2015.06.25-12.53.32:389][538]LogNet: Browse: /Game/ThirdPersonBP/Maps/Level2?restart
-[2015.06.25-12.53.32:389][538]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/Level2
-[2015.06.25-12.53.32:460][538]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004190BB00
-[2015.06.25-12.53.32:460][538]Cmd: MEM
-[2015.06.25-12.53.32:510][538]LogMemory: Platform Memory Stats for Windows
-[2015.06.25-12.53.32:510][538]LogMemory: Process Physical Memory: 917.33 MB used, 928.97 MB peak
-[2015.06.25-12.53.32:510][538]LogMemory: Process Virtual Memory: 806.28 MB used, 818.27 MB peak
-[2015.06.25-12.53.32:510][538]LogMemory: Physical Memory: 6554.72 MB used, 16282.96 MB total
-[2015.06.25-12.53.32:510][538]LogMemory: Virtual Memory: 1460.74 MB used, 8388608.00 MB total
-[2015.06.25-12.53.32:510][538]LogMemory: 
-[2015.06.25-12.53.32:510][538]Allocator Stats for TBB: (not implemented)
-[2015.06.25-12.53.32:511][538]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.53.32:513][538]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002030s)
-[2015.06.25-12.53.32:513][538]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.53.32:514][538]LogPlayLevel: PIE: World Init took: (0.001820s)
-[2015.06.25-12.53.32:515][538]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.004040s)
-[2015.06.25-12.53.32:515][538]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.53.32:519][538]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.53.32
-[2015.06.25-12.53.32:519][538]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.53.32:519][538]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.53.32:519][538]LogWorld: Bringing up level for play took: 0.001810
-[2015.06.25-12.53.48:359][489]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000004190AA20
-[2015.06.25-12.54.13:126][183]BlueprintLog: New page: Compile BP_FloorTile_LeftCorner
-[2015.06.25-12.54.13:273][183]BlueprintEditorCompileResults: Info [4295.45] Compile of BP_FloorTile_LeftCorner successful! [in 146 ms]
-[2015.06.25-12.54.15:411][330]BlueprintLog: New page: Compile BP_FloorTile
-[2015.06.25-12.54.15:524][330]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampDown_C_345' (it may have been removed)
-[2015.06.25-12.54.15:622][330]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampUp_C_349' (it may have been removed)
-[2015.06.25-12.54.15:719][330]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_LeftCorner_C_353' (it may have been removed)
-[2015.06.25-12.54.15:824][330]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RightCorner_C_357' (it may have been removed)
-[2015.06.25-12.54.16:219][330]BlueprintEditorCompileResults: Info [4298.40] Compile of BP_FloorTile successful! [in 806 ms]
-[2015.06.25-12.54.16:826][369]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.06.25-12.54.16:826][369]PIE: New page: PIE session: Level2 (Jun 25, 2015, 4:54:16 PM)
-[2015.06.25-12.54.16:827][369]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.54.16:828][369]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001887s)
-[2015.06.25-12.54.16:829][369]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.54.16:830][369]LogPlayLevel: PIE: World Init took: (0.001284s)
-[2015.06.25-12.54.16:830][369]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003372s)
-[2015.06.25-12.54.16:916][369]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-12.54.16:924][369]LogInit: FAudioDevice initialized.
-[2015.06.25-12.54.16:968][369]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.54.16:968][369]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.54.16:979][369]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.54.16:979][369]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.54.16:980][369]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.54.16:984][369]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.54.16
-[2015.06.25-12.54.16:984][369]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.54.16:984][369]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.54.16:984][369]LogWorld: Bringing up level for play took: 0.001841
-[2015.06.25-12.54.17:014][369]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 1.139
-[2015.06.25-12.54.31:556][243]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000039EC6660
-[2015.06.25-12.55.02:208][857]BlueprintLog: New page: Compile BP_FloorTile
-[2015.06.25-12.55.02:314][857]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampDown_C_365' (it may have been removed)
-[2015.06.25-12.55.02:410][857]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampUp_C_369' (it may have been removed)
-[2015.06.25-12.55.02:504][857]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_LeftCorner_C_373' (it may have been removed)
-[2015.06.25-12.55.02:609][857]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RightCorner_C_377' (it may have been removed)
-[2015.06.25-12.55.03:000][857]BlueprintEditorCompileResults: Info [4345.18] Compile of BP_FloorTile successful! [in 792 ms]
-[2015.06.25-12.55.03:750][909]LogPlayLevel: PIE:  No blueprints needed recompiling
-[2015.06.25-12.55.03:750][909]PIE: New page: PIE session: Level2 (Jun 25, 2015, 4:55:03 PM)
-[2015.06.25-12.55.03:751][909]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.55.03:753][909]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001790s)
-[2015.06.25-12.55.03:753][909]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.55.03:754][909]LogPlayLevel: PIE: World Init took: (0.001317s)
-[2015.06.25-12.55.03:754][909]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003301s)
-[2015.06.25-12.55.03:840][909]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2015.06.25-12.55.03:848][909]LogInit: FAudioDevice initialized.
-[2015.06.25-12.55.03:890][909]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.55.03:890][909]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.55.03:900][909]LogLinker:Warning: Can't find file '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner'
-[2015.06.25-12.55.03:900][909]LogLinker:Warning: Can't find file for asset '/Game/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner' while loading D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset.
-[2015.06.25-12.55.03:901][909]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.55.03:905][909]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.55.03
-[2015.06.25-12.55.03:905][909]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.55.03:905][909]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.55.03:905][909]LogWorld: Bringing up level for play took: 0.001920
-[2015.06.25-12.55.03:935][909]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.06
-[2015.06.25-12.55.16:843][691]Cmd: RestartLevel
-[2015.06.25-12.55.16:859][692]LogNet: Browse: /Game/ThirdPersonBP/Maps/Level2?restart
-[2015.06.25-12.55.16:859][692]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/Level2
-[2015.06.25-12.55.16:906][692]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003F357100
-[2015.06.25-12.55.16:923][692]Cmd: MEM
-[2015.06.25-12.55.16:974][692]LogMemory: Platform Memory Stats for Windows
-[2015.06.25-12.55.16:974][692]LogMemory: Process Physical Memory: 922.68 MB used, 928.97 MB peak
-[2015.06.25-12.55.16:974][692]LogMemory: Process Virtual Memory: 814.50 MB used, 818.27 MB peak
-[2015.06.25-12.55.16:974][692]LogMemory: Physical Memory: 6522.27 MB used, 16282.96 MB total
-[2015.06.25-12.55.16:974][692]LogMemory: Virtual Memory: 1473.68 MB used, 8388608.00 MB total
-[2015.06.25-12.55.16:974][692]LogMemory: 
-[2015.06.25-12.55.16:974][692]Allocator Stats for TBB: (not implemented)
-[2015.06.25-12.55.16:974][692]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.55.16:976][692]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001921s)
-[2015.06.25-12.55.16:977][692]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.55.16:978][692]LogPlayLevel: PIE: World Init took: (0.001774s)
-[2015.06.25-12.55.16:978][692]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003872s)
-[2015.06.25-12.55.16:978][692]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.55.16:982][692]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.55.16
-[2015.06.25-12.55.16:982][692]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.55.16:982][692]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.55.16:982][692]LogWorld: Bringing up level for play took: 0.001739
-[2015.06.25-12.55.30:570][574]Cmd: RestartLevel
-[2015.06.25-12.55.30:586][575]LogNet: Browse: /Game/ThirdPersonBP/Maps/Level2?restart
-[2015.06.25-12.55.30:587][575]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/Level2
-[2015.06.25-12.55.30:633][575]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003F6DCAE0
-[2015.06.25-12.55.30:649][575]Cmd: MEM
-[2015.06.25-12.55.30:700][575]LogMemory: Platform Memory Stats for Windows
-[2015.06.25-12.55.30:700][575]LogMemory: Process Physical Memory: 922.69 MB used, 928.97 MB peak
-[2015.06.25-12.55.30:700][575]LogMemory: Process Virtual Memory: 814.50 MB used, 818.27 MB peak
-[2015.06.25-12.55.30:700][575]LogMemory: Physical Memory: 6522.18 MB used, 16282.96 MB total
-[2015.06.25-12.55.30:700][575]LogMemory: Virtual Memory: 1474.43 MB used, 8388608.00 MB total
-[2015.06.25-12.55.30:700][575]LogMemory: 
-[2015.06.25-12.55.30:700][575]Allocator Stats for TBB: (not implemented)
-[2015.06.25-12.55.30:700][575]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
-[2015.06.25-12.55.30:702][575]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002150s)
-[2015.06.25-12.55.30:704][575]LogAIModule: Creating AISystem for world Level2
-[2015.06.25-12.55.30:705][575]LogPlayLevel: PIE: World Init took: (0.002087s)
-[2015.06.25-12.55.30:705][575]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.004415s)
-[2015.06.25-12.55.30:705][575]LogWorld: Game class is 'RunGameMode_C'
-[2015.06.25-12.55.30:708][575]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.25-14.55.30
-[2015.06.25-12.55.30:709][575]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.55.30:709][575]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2015.06.25-12.55.30:709][575]LogWorld: Bringing up level for play took: 0.001722
-[2015.06.25-12.55.30:841][576]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003F3C5A80
-[2015.06.25-12.57.12:878][949]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2015.06.25-12.57.12:930][949]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2015.06.25-12.57.12:987][949]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2015.06.25-12.57.16:948][414]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000251FC540
-[2015.06.25-12.57.16:949][414]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000F592AC0
-[2015.06.25-12.57.16:949][414]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000035F560C0
-[2015.06.25-12.57.16:949][414]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000360E0180
-[2015.06.25-12.57.18:866][414]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/Blueprints/BP_FloorTile" FILE="D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/BP_FloorTile.uasset" SILENT=true
-[2015.06.25-12.57.19:019][414]LogSavePackage: Save=147.365906ms
-[2015.06.25-12.57.19:019][414]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile0152D4274538FFD973190D8299955AB2.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/BP_FloorTile.uasset'
-[2015.06.25-12.57.19:044][414]LogSavePackage: Save=1.014652ms
-[2015.06.25-12.57.19:044][414]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_Corner4FBC7A624AD3BCF585CF82B839FF0493.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/BP_FloorTile_Corner.uasset'
-[2015.06.25-12.57.19:113][414]LogSavePackage: Save=37.840630ms
-[2015.06.25-12.57.19:113][414]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_LeftCornerC6AD879A41F9B7C0E5E27594F0FCFC70.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/BP_FloorTile_LeftCorner.uasset'
-[2015.06.25-12.57.19:120][414]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/ThirdPersonBP/Blueprints/RunGameMode" FILE="D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset" SILENT=true
-[2015.06.25-12.57.19:194][414]LogSavePackage: Save=68.743256ms
-[2015.06.25-12.57.19:194][414]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/RunGameMode3228C07345AF2E874056CEADE101B60A.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Blueprints/RunGameMode.uasset'
-[2015.06.25-12.57.19:518][415]Cmd: QUIT_EDITOR
-[2015.06.25-12.57.19:753][415]LogExit: Preparing to exit.
-[2015.06.25-12.57.20:068][415]LogExit: Editor shut down
-[2015.06.25-12.57.20:068][415]LogExit: Transaction tracking system shut down
-[2015.06.25-12.57.20:073][415]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000FDA79C0
-[2015.06.25-12.57.20:073][415]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000F4A9A80
-[2015.06.25-12.57.20:073][415]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000EACF100
-[2015.06.25-12.57.20:074][415]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000024D849A0
-[2015.06.25-12.57.20:075][415]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000024D877E0
-[2015.06.25-12.57.20:265][415]LogExit: Object subsystem successfully closed.
-[2015.06.25-12.57.20:375][415]LogModuleManager: Shutting down and abandoning module CrashTracker (188)
-[2015.06.25-12.57.20:376][415]LogModuleManager: Shutting down and abandoning module SceneOutliner (187)
-[2015.06.25-12.57.20:376][415]LogModuleManager: Shutting down and abandoning module SuperSearch (186)
-[2015.06.25-12.57.20:376][415]LogModuleManager: Shutting down and abandoning module WidgetCarousel (185)
-[2015.06.25-12.57.20:376][415]LogModuleManager: Shutting down and abandoning module AddContentDialog (184)
-[2015.06.25-12.57.20:376][415]LogModuleManager: Shutting down and abandoning module EditorWidgets (183)
-[2015.06.25-12.57.20:376][415]LogModuleManager: Shutting down and abandoning module CollectionManager (182)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module StatsViewer (181)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module FoliageEdit (180)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module LandscapeEditor (179)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module ActorPickerMode (178)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module GeometryMode (177)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module TextureAlignMode (176)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module BspMode (175)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module PlacementMode (174)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module AutomationWorker (173)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module CharacterAI (172)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module SmartSnapping (171)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module ViewportSnapping (170)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module LogVisualizer (169)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (168)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module IntroTutorials (167)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (166)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (165)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (164)
-[2015.06.25-12.57.20:377][415]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (163)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (162)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (161)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (160)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module MergeActors (159)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module SizeMap (158)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module TreeMap (157)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module ReferenceViewer (156)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (155)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module HardwareTargeting (154)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (153)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module UndoHistory (152)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (151)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module UserFeedback (150)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module XmlParser (149)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module Blutility (148)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (147)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (146)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module InputBindingEditor (145)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (144)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module SettingsEditor (143)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module ProjectLauncher (142)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module SessionFrontend (141)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module ProfilerClient (140)
-[2015.06.25-12.57.20:954][415]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (139)
-[2015.06.25-12.57.20:955][415]LogModuleManager: Shutting down and abandoning module DeviceManager (138)
-[2015.06.25-12.57.20:955][415]LogModuleManager: Shutting down and abandoning module AutomationController (137)
-[2015.06.25-12.57.20:955][415]LogModuleManager: Shutting down and abandoning module AutomationWindow (136)
-[2015.06.25-12.57.20:955][415]LogModuleManager: Shutting down and abandoning module Layers (135)
-[2015.06.25-12.57.20:955][415]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (134)
-[2015.06.25-12.57.20:955][415]LogModuleManager: Shutting down and abandoning module DetailCustomizations (133)
-[2015.06.25-12.57.20:955][415]LogModuleManager: Shutting down and abandoning module PackagesDialog (132)
-[2015.06.25-12.57.20:955][415]LogModuleManager: Shutting down and abandoning module AssetRegistry (131)
-[2015.06.25-12.57.20:992][415]LogModuleManager: Shutting down and abandoning module Persona (130)
-[2015.06.25-12.57.20:993][415]LogModuleManager: Shutting down and abandoning module Kismet (129)
-[2015.06.25-12.57.20:993][415]LogModuleManager: Shutting down and abandoning module GraphEditor (128)
-[2015.06.25-12.57.20:993][415]LogModuleManager: Shutting down and abandoning module ClassViewer (127)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module Toolbox (126)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module ModuleUI (125)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module MovieSceneTools (124)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module OutputLog (123)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module GammaUI (122)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module Documentation (121)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (120)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (119)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module AnalyticsET (118)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module Analytics (117)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module AITestSuite (116)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module GameplayDebugger (115)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module AIModule (114)
-[2015.06.25-12.57.20:994][415]LogModuleManager: Shutting down and abandoning module ProfilerService (113)
-[2015.06.25-12.57.21:014][415]LogModuleManager: Shutting down and abandoning module TaskGraph (112)
-[2015.06.25-12.57.21:014][415]LogModuleManager: Shutting down and abandoning module SlateRemote (111)
-[2015.06.25-12.57.21:014][415]LogModuleManager: Shutting down and abandoning module SteamVRController (110)
-[2015.06.25-12.57.21:014][415]LogModuleManager: Shutting down and abandoning module SteamVR (109)
-[2015.06.25-12.57.21:014][415]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (108)
-[2015.06.25-12.57.21:014][415]LogModuleManager: Shutting down and abandoning module OculusRift (107)
-[2015.06.25-12.57.21:014][415]LogModuleManager: Shutting down and abandoning module LeapMotionController (106)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (105)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module CableComponent (104)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module MessagingDebugger (103)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (102)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (101)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module PluginBrowser (100)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module EpicSurvey (99)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module DesktopPlatform (98)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (97)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module UObjectPlugin (96)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (95)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (94)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module SourceControl (93)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module GitSourceControl (92)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module BlankPlugin (91)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (90)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (89)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module MeshPaint (88)
-[2015.06.25-12.57.21:029][415]LogModuleManager: Shutting down and abandoning module SlateReflector (87)
-[2015.06.25-12.57.21:030][415]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (86)
-[2015.06.25-12.57.21:030][415]LogModuleManager: Shutting down and abandoning module HotReload (85)
-[2015.06.25-12.57.21:030][415]LogModuleManager: Shutting down and abandoning module MainFrame (84)
-[2015.06.25-12.57.21:030][415]LogModuleManager: Shutting down and abandoning module LevelEditor (83)
-[2015.06.25-12.57.21:031][415]LogModuleManager: Shutting down and abandoning module ContentBrowser (82)
-[2015.06.25-12.57.21:032][415]LogModuleManager: Shutting down and abandoning module Paper2DEditor (81)
-[2015.06.25-12.57.21:032][415]LogModuleManager: Shutting down and abandoning module UdpMessaging (80)
-[2015.06.25-12.57.21:132][415]LogModuleManager: Shutting down and abandoning module Paper2D (79)
-[2015.06.25-12.57.21:132][415]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (78)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module Media (77)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module WmfMedia (76)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (75)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module PropertyEditor (74)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (73)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module FunctionalTesting (72)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (71)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (70)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module MessageLog (69)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module Sequencer (68)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module AssetTools (67)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module UMGEditor (66)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module UMG (65)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module Slate (64)
-[2015.06.25-12.57.21:136][415]LogModuleManager: Shutting down and abandoning module EditorStyle (63)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module SessionServices (62)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (61)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (60)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module XAudio2 (59)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module Networking (57)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module Core (56)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module KismetCompiler (55)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module PhysXFormats (54)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module MeshUtilities (53)
-[2015.06.25-12.57.21:139][415]LogModuleManager: Shutting down and abandoning module DerivedDataCache (52)
-[2015.06.25-12.57.21:225][415]LogDerivedDataCache: Shutdown
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (51)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (50)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (49)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (48)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (47)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (46)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (45)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module ImageWrapper (44)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (43)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (42)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (41)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (40)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (39)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (38)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (37)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (36)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module Messaging (35)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (34)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (33)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (32)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (31)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (30)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (29)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (28)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (27)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (26)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (25)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (24)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (23)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (22)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module DesktopTargetPlatform (21)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module TargetPlatform (20)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module InputCore (19)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module Settings (18)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (16)
-[2015.06.25-12.57.21:225][415]LogModuleManager: Shutting down and abandoning module HTTP (15)
-[2015.06.25-12.57.21:226][415]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (14)
-[2015.06.25-12.57.21:226][415]LogModuleManager: Shutting down and abandoning module TextureCompressor (13)
-[2015.06.25-12.57.21:226][415]LogModuleManager: Shutting down and abandoning module ShaderCore (12)
-[2015.06.25-12.57.21:226][415]LogModuleManager: Shutting down and abandoning module Landscape (11)
-[2015.06.25-12.57.21:226][415]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (10)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module OpenGLDrv (9)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module D3D11RHI (8)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2015.06.25-12.57.21:231][415]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2015.06.25-12.57.21:231][415]LogExit: Exiting.
-[2015.06.25-12.57.21:233][415]Log file closed, 06/25/15 14:57:21
+[2015.06.26-09.31.30:832][  0]LogD3D11RHI: Found D3D11 adapter 0: ATI FirePro V(FireGL V) Graphics Adapter (Feature Level 11_0)
+[2015.06.26-09.31.30:832][  0]LogD3D11RHI: Adapter has 4078MB of dedicated video memory, 0MB of dedicated system memory, and 3840MB of shared system memory, 3 output[s]
+[2015.06.26-09.31.30:832][  0]LogD3D11RHI: Chosen D3D11 Adapter Id = 0
+[2015.06.26-09.31.30:838][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2015.06.26-09.31.30:853][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2015.06.26-09.31.30:865][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2015.06.26-09.31.31:728][  0]LogTemp:Display: Loaded TP DesktopTargetPlatform
+[2015.06.26-09.31.31:744][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2015.06.26-09.31.31:761][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2015.06.26-09.31.31:778][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2015.06.26-09.31.31:797][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2015.06.26-09.31.31:812][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2015.06.26-09.31.31:827][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2015.06.26-09.31.31:842][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2015.06.26-09.31.31:856][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2015.06.26-09.31.31:871][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2015.06.26-09.31.31:886][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2015.06.26-09.31.31:901][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2015.06.26-09.31.31:954][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2015.06.26-09.31.31:968][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2015.06.26-09.31.31:983][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2015.06.26-09.31.32:001][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2015.06.26-09.31.32:001][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2015.06.26-09.31.32:233][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2015.06.26-09.31.32:314][  0]LogDerivedDataCache: Loaded boot cache 0.08s 53MB C:/Users/ihadjiat.PRIV.000/AppData/Local/UnrealEngine/4.8/DerivedDataCache/Boot.ddc.
+[2015.06.26-09.31.32:314][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/ihadjiat.PRIV.000/AppData/Local/UnrealEngine/4.8/DerivedDataCache/Boot.ddc
+[2015.06.26-09.31.32:314][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2015.06.26-09.31.32:314][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2015.06.26-09.31.32:314][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2015.06.26-09.31.32:314][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2015.06.26-09.31.32:468][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2015.06.26-09.31.32:479][  0]LogDerivedDataCache: Using Local data cache path C:/Users/ihadjiat.PRIV.000/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2015.06.26-09.31.32:771][  0]LogInit: Selected Device Profile: [Windows]
+[2015.06.26-09.31.32:782][  0]ImportText (ComponentSweepMultiTests): Missing closing parenthesis: (RootShapeAsset="/Engine/BasicShapes/Cube.Cube",ShapeType="TriggerCapsule",HitResult=(Time=0.50,Location=(X=-100.000015,Y=0.0,Z=100.000015),ImpactPoint=(X=-50.0,Y=0.0,Z=50.0),Normal=(X=-1.0,Y=-0.0,Z=0.0),ImpactNormal=(X=0.0,Y=0.0,Z=1.0),TraceStart=(X=-200.0,Y=0.0,Z=200.0),TraceEnd=(X=0.0,Y=0.0,Z=0.0))
+[2015.06.26-09.31.32:782][  0]ImportText (LineTraceSingleByChannelTests): Missing closing parenthesis: (RootShapeAsset="/Engine/BasicShapes/Cube.Cube",HitResult=(Time=0.50,Location=(X=-100.000015,Y=0.0,Z=100.000015),ImpactPoint=(X=-50.0,Y=0.0,Z=50.0),Normal=(X=-1.0,Y=-0.0,Z=0.0),ImpactNormal=(X=0.0,Y=0.0,Z=1.0),TraceStart=(X=-200.0,Y=0.0,Z=200.0),TraceEnd=(X=0.0,Y=0.0,Z=0.0))
+[2015.06.26-09.31.32:813][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2015.06.26-09.31.32:813][  0]LogMeshUtilities: No automatic mesh merging module available
+[2015.06.26-09.31.33:353][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2015.06.26-09.31.34:542][  0]UdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2015.06.26-09.31.34:976][  0]SourceControl: Info Source control is disabled
+[2015.06.26-09.31.34:976][  0]SourceControl: Info Source control is disabled
+[2015.06.26-09.31.34:988][  0]SourceControl: Info Source control is disabled
+[2015.06.26-09.31.34:999][  0]SourceControl: Info Source control is disabled
+[2015.06.26-09.31.35:294][  0]LogObj: 26273 objects as part of root set at end of initial load.
+[2015.06.26-09.31.35:294][  0]LogUObjectAllocator: 5409248 out of 0 bytes used by permanent object pool.
+[2015.06.26-09.31.35:372][  0]LogEngine: Initializing Engine...
+[2015.06.26-09.31.35:375][  0]LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.6.0.0
+[2015.06.26-09.31.35:376][  0]LogHMD:Warning: SteamVR failed to initialize.  Error: 110
+[2015.06.26-09.31.35:565][  0]LogAIModule: Creating AISystem for world NewWorld
+[2015.06.26-09.31.35:599][  0]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.31.35:633][  0]LogInit: FAudioDevice initialized.
+[2015.06.26-09.31.35:678][  0]LogDerivedDataCache: Saved boot cache 0.05s 53MB C:/Users/ihadjiat.PRIV.000/AppData/Local/UnrealEngine/4.8/DerivedDataCache/Boot.ddc.
+[2015.06.26-09.31.35:690][  0]LogInit: Texture streaming: Disabled
+[2015.06.26-09.31.35:717][  0]LogAnalytics: Creating configured Analytics provider AnalyticsET
+[2015.06.26-09.31.35:717][  0]LogAnalytics: [UEEditor.Rocket.Release] APIServer = http://et2.epicgames.com/ET2/. AppVersion = 4.8.1-2591939+++depot+UE4-Releases+4.8
+[2015.06.26-09.31.35:717][  0]LogAnalytics: [UEEditor.Rocket.Release] SetUserId d5bdeaa6483860f643998eb7fbf661da|6176f649f1174023a271b9b929452cb0|6f943df1-ac3d-4304-bc90-3ae20687ab72
+[2015.06.26-09.31.35:717][  0]LogAnalytics: [UEEditor.Rocket.Release] AnalyticsET::StartSession
+[2015.06.26-09.31.35:745][  0]LogInit: Transaction tracking system initialized
+[2015.06.26-09.31.35:888][  0]BlueprintLog: New page: Editor Load
+[2015.06.26-09.31.35:925][  0]LogAssetRegistry: FAssetRegistry took 0.0102 seconds to start up
+[2015.06.26-09.31.35:925][  0]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for ../../../Engine/Plugins/Experimental/CharacterAI/Content/. Error: 0
+[2015.06.26-09.31.36:689][  0]LogConsoleManager:Warning: Console variable 'r.VSync' wasn't set ('GameSetting' has a lower priority than 'SystemSettingsIni')
+[2015.06.26-09.31.36:689][  0]LogConsoleResponse:Display: 
+[2015.06.26-09.31.36:821][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2015.06.26-09.31.37:053][  0]SourceControl: Info Source control is disabled
+[2015.06.26-09.31.37:053][  0]Cmd: MAP LOAD FILE="D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.06.26-09.31.37:069][  0]LightingResults: New page: Lighting Build
+[2015.06.26-09.31.37:082][  0]MapCheck: New page: Map Check
+[2015.06.26-09.31.37:082][  0]LightingResults: New page: Lighting Build
+[2015.06.26-09.31.37:096][  0]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000018EE0B80
+[2015.06.26-09.31.40:924][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2015.06.26-09.31.40:940][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.06.26-09.31.41:039][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.06.26-09.31.41:090][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 50.591ms to complete.
+[2015.06.26-09.31.41:090][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 4.036
+[2015.06.26-09.31.41:355][  0]LogCollectionManager: Loaded 0 collections in 0.002097 seconds
+[2015.06.26-09.31.41:367][  0]LogContentBrowser: Native class hierarchy populated in 0.0112 seconds. Added 1792 classes and 301 folders.
+[2015.06.26-09.31.41:479][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2015.06.26-09.31.41:556][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2015.06.26-09.31.41:584][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2015.06.26-09.31.41:737][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2015.06.26-09.31.41:747][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2015.06.26-09.31.41:779][  0]LogLoad: Full Startup: 14.51 seconds (BP compile: 1.21 seconds)
+[2015.06.26-09.31.41:851][  0]LogContentStreaming: Texture pool size is 0.000000MB
+[2015.06.26-09.31.41:998][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2015.06.26-09.31.42:243][  0]LogRenderer: Reallocating scene render targets to support 1208x680 (Frame:2).
+[2015.06.26-09.31.42:910][  9]LogAssetRegistry: Asset discovery search completed in 6.9945 seconds
+[2015.06.26-09.31.52:083][748]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureMacros.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.06.26-09.31.52:145][748]LogLinker:Warning: Asset '../../../Engine/Content/ArtTools/RenderToTexture/Enums/RenderToTexture_Enum.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2015.06.26-09.31.56:140][895]LogRenderer: Reallocating scene render targets to support 1208x808 (Frame:1047).
+[2015.06.26-09.33.56:984][335]LogActor:Warning: GameNetworkManager /Engine/Transient.World_5:PersistentLevel.GameNetworkManager_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.34.47:484][969]BlueprintLog: New page: Compile RunGameMode
+[2015.06.26-09.34.47:533][969]LogBlueprint:Error: [compiler RunGameMode] Error The type of  Object  is undetermined.  Connect something to  Cast To RunCharacter  to imply a specific type.
+[2015.06.26-09.34.47:534][969]LogBlueprint:Error: [compiler RunGameMode] Error The current value of the ' Object ' pin is invalid: Unsupported type Object Wildcard on pin Object
+[2015.06.26-09.34.47:670][969]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.34.47:671][969]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
+[2015.06.26-09.34.48:019][969]LogBlueprint:Warning: [compiler RunGameMode] Warning [0200.75] Compile of RunGameMode failed. 2 Fatal Issue(s) 0 Warning(s) [in 534 ms]
+[2015.06.26-09.34.48:019][969]BlueprintEditorCompileResults:Error: Error The type of  Object  is undetermined.  Connect something to  Cast To RunCharacter  to imply a specific type.
+[2015.06.26-09.34.48:019][969]BlueprintEditorCompileResults:Error: Error The current value of the ' Object ' pin is invalid: Unsupported type Object Wildcard on pin Object
+[2015.06.26-09.34.48:019][969]BlueprintEditorCompileResults:Warning: Warning [0200.75] Compile of RunGameMode failed. 2 Fatal Issue(s) 0 Warning(s) [in 534 ms]
+[2015.06.26-09.34.50:651][173]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.38.22:131][251]BlueprintLog: New page: Compile RunGameMode
+[2015.06.26-09.38.22:235][251]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.38.22:235][251]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
+[2015.06.26-09.38.22:277][251]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000F63C0E0
+[2015.06.26-09.38.22:277][251]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000F63D3A0
+[2015.06.26-09.38.22:278][251]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000F6005E0
+[2015.06.26-09.38.22:315][251]BlueprintEditorCompileResults: Info [0415.04] Compile of RunGameMode successful! [in 183 ms]
+[2015.06.26-09.38.48:142][737]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.38.48:143][737]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
+[2015.06.26-09.39.14:554][550]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.39.14:811][550]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_0) Not registered. Aborting.
+[2015.06.26-09.39.14:931][550]LogUObjectGlobals:Warning: Guid is in use by CapsuleComponent /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.RunCharacter_C_1.CollisionCylinder and CapsuleComponent /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.RunCharacter_C_0.CollisionCylinder, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2015.06.26-09.39.14:931][550]LogUObjectGlobals:Warning: Guid is in use by ArrowComponent /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.RunCharacter_C_1.Arrow and ArrowComponent /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.RunCharacter_C_0.Arrow, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2015.06.26-09.39.14:931][550]LogUObjectGlobals:Warning: Guid is in use by CharacterMovementComponent /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.RunCharacter_C_1.CharMoveComp and CharacterMovementComponent /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.RunCharacter_C_0.CharMoveComp, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2015.06.26-09.39.14:931][550]LogUObjectGlobals:Warning: Guid is in use by SkeletalMeshComponent /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.RunCharacter_C_1.CharacterMesh0 and SkeletalMeshComponent /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.RunCharacter_C_0.CharacterMesh0, which should never happen in the editor but could happen at runtime with duplicate level loading or PIE
+[2015.06.26-09.39.15:185][550]BlueprintEditorCompileResults: Info [0467.91] Compile of RunCharacter successful! [in 630 ms]
+[2015.06.26-09.39.17:125][669]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.39.17:134][669]PIE: New page: PIE session: ThirdPersonExampleMap (Jun 26, 2015, 1:39:17 PM)
+[2015.06.26-09.39.17:134][669]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2015.06.26-09.39.17:166][669]LogPlayLevel: PIE: StaticDuplicateObject took: (0.031928s)
+[2015.06.26-09.39.17:168][669]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2015.06.26-09.39.17:169][669]LogPlayLevel: PIE: World Init took: (0.002755s)
+[2015.06.26-09.39.17:169][669]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.035297s)
+[2015.06.26-09.39.17:169][669]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.39.17:256][669]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.39.17:264][669]LogInit: FAudioDevice initialized.
+[2015.06.26-09.39.17:328][669]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.39.17:335][669]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2015.06.26-11.39.17
+[2015.06.26-09.39.17:335][669]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.39.17:335][669]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.39.17:335][669]LogWorld: Bringing up level for play took: 0.005521
+[2015.06.26-09.39.17:359][669]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.857
+[2015.06.26-09.39.21:101][872]Cmd: RestartLevel
+[2015.06.26-09.39.21:119][873]LogNet: Browse: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap?restart
+[2015.06.26-09.39.21:119][873]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap
+[2015.06.26-09.39.21:162][873]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000F669440
+[2015.06.26-09.39.21:185][873]Cmd: MEM
+[2015.06.26-09.39.21:234][873]LogMemory: Platform Memory Stats for Windows
+[2015.06.26-09.39.21:234][873]LogMemory: Process Physical Memory: 782.28 MB used, 796.05 MB peak
+[2015.06.26-09.39.21:234][873]LogMemory: Process Virtual Memory: 668.74 MB used, 680.88 MB peak
+[2015.06.26-09.39.21:234][873]LogMemory: Physical Memory: 5262.21 MB used, 16282.96 MB total
+[2015.06.26-09.39.21:234][873]LogMemory: Virtual Memory: 1353.97 MB used, 8388608.00 MB total
+[2015.06.26-09.39.21:234][873]LogMemory: 
+[2015.06.26-09.39.21:234][873]Allocator Stats for TBB: (not implemented)
+[2015.06.26-09.39.21:234][873]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2015.06.26-09.39.21:268][873]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033040s)
+[2015.06.26-09.39.21:269][873]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2015.06.26-09.39.21:270][873]LogPlayLevel: PIE: World Init took: (0.002587s)
+[2015.06.26-09.39.21:270][873]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.035919s)
+[2015.06.26-09.39.21:270][873]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.39.21:278][873]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2015.06.26-11.39.21
+[2015.06.26-09.39.21:279][873]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameSession_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.39.21:279][873]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.GameNetworkManager_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.39.21:279][873]LogWorld: Bringing up level for play took: 0.005865
+[2015.06.26-09.39.23:856][980]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.39.30:192][980]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003A0068E0
+[2015.06.26-09.39.30:218][980]Cmd: MAP LOAD FILE="D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Content/ThirdPersonBP/Maps/Level2.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2015.06.26-09.39.30:302][980]LightingResults: New page: Lighting Build
+[2015.06.26-09.39.30:324][980]LoadErrors: New page: Loading map: Level2.umap
+[2015.06.26-09.39.30:324][980]MapCheck: New page: Map Check
+[2015.06.26-09.39.30:324][980]LightingResults: New page: Lighting Build
+[2015.06.26-09.39.30:362][980]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000024277420
+[2015.06.26-09.39.30:512][980]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.39.30:564][980]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2015.06.26-09.39.30:602][980]Cmd: MAP CHECKDEP NOCLEARLOG
+[2015.06.26-09.39.30:659][980]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 56.729ms to complete.
+[2015.06.26-09.39.30:659][980]LogFileHelpers: Loading map 'Level2' took 2.067
+[2015.06.26-09.39.32:391][ 99]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.39.32:391][ 99]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:39:32 PM)
+[2015.06.26-09.39.32:392][ 99]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.39.32:394][ 99]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001918s)
+[2015.06.26-09.39.32:395][ 99]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.39.32:395][ 99]LogPlayLevel: PIE: World Init took: (0.001255s)
+[2015.06.26-09.39.32:395][ 99]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003373s)
+[2015.06.26-09.39.32:395][ 99]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.39.32:472][ 99]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.39.32:480][ 99]LogInit: FAudioDevice initialized.
+[2015.06.26-09.39.32:511][ 99]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.39.32:515][ 99]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.39.32
+[2015.06.26-09.39.32:515][ 99]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.39.32:515][ 99]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.39.32:515][ 99]LogWorld: Bringing up level for play took: 0.001745
+[2015.06.26-09.39.32:548][ 99]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.047
+[2015.06.26-09.39.35:333][277]Cmd: RestartLevel
+[2015.06.26-09.39.35:348][278]LogNet: Browse: /Game/ThirdPersonBP/Maps/Level2?restart
+[2015.06.26-09.39.35:349][278]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/Level2
+[2015.06.26-09.39.35:393][278]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000024EAD440
+[2015.06.26-09.39.35:411][278]Cmd: MEM
+[2015.06.26-09.39.35:463][278]LogMemory: Platform Memory Stats for Windows
+[2015.06.26-09.39.35:463][278]LogMemory: Process Physical Memory: 782.70 MB used, 810.25 MB peak
+[2015.06.26-09.39.35:463][278]LogMemory: Process Virtual Memory: 667.08 MB used, 697.56 MB peak
+[2015.06.26-09.39.35:464][278]LogMemory: Physical Memory: 5254.80 MB used, 16282.96 MB total
+[2015.06.26-09.39.35:464][278]LogMemory: Virtual Memory: 1350.93 MB used, 8388608.00 MB total
+[2015.06.26-09.39.35:464][278]LogMemory: 
+[2015.06.26-09.39.35:464][278]Allocator Stats for TBB: (not implemented)
+[2015.06.26-09.39.35:464][278]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.39.35:466][278]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002114s)
+[2015.06.26-09.39.35:467][278]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.39.35:467][278]LogPlayLevel: PIE: World Init took: (0.001801s)
+[2015.06.26-09.39.35:468][278]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.004109s)
+[2015.06.26-09.39.35:468][278]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.39.35:471][278]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.39.35
+[2015.06.26-09.39.35:471][278]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.39.35:472][278]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.39.35:472][278]LogWorld: Bringing up level for play took: 0.001708
+[2015.06.26-09.40.06:350][951]Cmd: RestartLevel
+[2015.06.26-09.40.06:367][952]LogNet: Browse: /Game/ThirdPersonBP/Maps/Level2?restart
+[2015.06.26-09.40.06:367][952]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/Level2
+[2015.06.26-09.40.06:414][952]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002AACFF60
+[2015.06.26-09.40.06:433][952]Cmd: MEM
+[2015.06.26-09.40.06:484][952]LogMemory: Platform Memory Stats for Windows
+[2015.06.26-09.40.06:484][952]LogMemory: Process Physical Memory: 788.79 MB used, 810.25 MB peak
+[2015.06.26-09.40.06:484][952]LogMemory: Process Virtual Memory: 675.20 MB used, 697.56 MB peak
+[2015.06.26-09.40.06:484][952]LogMemory: Physical Memory: 5254.34 MB used, 16282.96 MB total
+[2015.06.26-09.40.06:484][952]LogMemory: Virtual Memory: 1359.59 MB used, 8388608.00 MB total
+[2015.06.26-09.40.06:484][952]LogMemory: 
+[2015.06.26-09.40.06:484][952]Allocator Stats for TBB: (not implemented)
+[2015.06.26-09.40.06:484][952]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.40.06:486][952]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001985s)
+[2015.06.26-09.40.06:487][952]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.40.06:488][952]LogPlayLevel: PIE: World Init took: (0.001881s)
+[2015.06.26-09.40.06:488][952]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.004072s)
+[2015.06.26-09.40.06:489][952]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.40.06:492][952]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.40.06
+[2015.06.26-09.40.06:492][952]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.40.06:492][952]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.40.06:493][952]LogWorld: Bringing up level for play took: 0.001671
+[2015.06.26-09.40.06:956][974]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000024F320C0
+[2015.06.26-09.40.14:856][546]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.40.15:144][546]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.40.15:453][546]BlueprintEditorCompileResults: Info [0528.17] Compile of RunCharacter successful! [in 596 ms]
+[2015.06.26-09.40.16:126][591]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.40.16:126][591]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:40:16 PM)
+[2015.06.26-09.40.16:126][591]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.40.16:128][591]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001725s)
+[2015.06.26-09.40.16:129][591]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.40.16:129][591]LogPlayLevel: PIE: World Init took: (0.001251s)
+[2015.06.26-09.40.16:129][591]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003153s)
+[2015.06.26-09.40.16:129][591]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.40.16:214][591]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.40.16:222][591]LogInit: FAudioDevice initialized.
+[2015.06.26-09.40.16:296][591]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.40.16:299][591]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.40.16
+[2015.06.26-09.40.16:299][591]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.40.16:300][591]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.40.16:300][591]LogWorld: Bringing up level for play took: 0.001842
+[2015.06.26-09.40.16:327][591]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 -0.176
+[2015.06.26-09.40.20:947][881]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x00000000360685E0
+[2015.06.26-09.40.27:317][360]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.40.27:606][360]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.40.27:924][360]BlueprintEditorCompileResults: Info [0540.65] Compile of RunCharacter successful! [in 606 ms]
+[2015.06.26-09.40.28:819][427]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.40.28:819][427]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:40:28 PM)
+[2015.06.26-09.40.28:820][427]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.40.28:822][427]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001785s)
+[2015.06.26-09.40.28:822][427]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.40.28:823][427]LogPlayLevel: PIE: World Init took: (0.001442s)
+[2015.06.26-09.40.28:823][427]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003427s)
+[2015.06.26-09.40.28:823][427]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.40.28:906][427]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.40.28:914][427]LogInit: FAudioDevice initialized.
+[2015.06.26-09.40.28:987][427]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.40.28:991][427]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.40.28
+[2015.06.26-09.40.28:991][427]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.40.28:991][427]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.40.28:991][427]LogWorld: Bringing up level for play took: 0.001959
+[2015.06.26-09.40.29:020][427]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.517
+[2015.06.26-09.40.36:817][948]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002AACE700
+[2015.06.26-09.40.47:210][764]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.40.47:499][764]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.40.47:813][764]BlueprintEditorCompileResults: Info [0560.53] Compile of RunCharacter successful! [in 603 ms]
+[2015.06.26-09.40.48:537][817]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.40.48:537][817]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:40:48 PM)
+[2015.06.26-09.40.48:537][817]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.40.48:539][817]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001759s)
+[2015.06.26-09.40.48:540][817]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.40.48:540][817]LogPlayLevel: PIE: World Init took: (0.001281s)
+[2015.06.26-09.40.48:540][817]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003220s)
+[2015.06.26-09.40.48:540][817]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.40.48:621][817]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.40.48:629][817]LogInit: FAudioDevice initialized.
+[2015.06.26-09.40.48:704][817]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.40.48:707][817]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.40.48
+[2015.06.26-09.40.48:707][817]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.40.48:708][817]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.40.48:708][817]LogWorld: Bringing up level for play took: 0.001804
+[2015.06.26-09.40.48:738][817]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.235
+[2015.06.26-09.40.51:367][990]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002AACF240
+[2015.06.26-09.41.07:623][216]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.41.07:907][216]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.41.08:226][216]BlueprintEditorCompileResults: Info [0580.95] Compile of RunCharacter successful! [in 603 ms]
+[2015.06.26-09.41.09:381][301]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.41.09:381][301]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:41:09 PM)
+[2015.06.26-09.41.09:381][301]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.41.09:383][301]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001984s)
+[2015.06.26-09.41.09:384][301]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.41.09:385][301]LogPlayLevel: PIE: World Init took: (0.001418s)
+[2015.06.26-09.41.09:385][301]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003587s)
+[2015.06.26-09.41.09:385][301]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.41.09:469][301]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.41.09:477][301]LogInit: FAudioDevice initialized.
+[2015.06.26-09.41.09:549][301]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.41.09:553][301]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.41.09
+[2015.06.26-09.41.09:553][301]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.41.09:553][301]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.41.09:554][301]LogWorld: Bringing up level for play took: 0.001823
+[2015.06.26-09.41.09:578][301]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 1.075
+[2015.06.26-09.41.11:856][454]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000024EAE520
+[2015.06.26-09.41.21:523][197]BlueprintLog: New page: Pre-PIE auto-recompile
+[2015.06.26-09.41.21:526][197]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.41.21:546][197]LogPlayLevel: [PIE] Compiling RunCharacter before PIE...
+[2015.06.26-09.41.22:065][197]LogPlayLevel: [PIE] Compiling BP_Blocker before PIE...
+[2015.06.26-09.41.22:153][197]LogPlayLevel: [PIE] Compiling BP_Items before PIE...
+[2015.06.26-09.41.22:264][197]LogPlayLevel: [PIE] Compiling BP_FloorTile before PIE...
+[2015.06.26-09.41.22:367][197]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_LeftCorner_C_327' (it may have been removed)
+[2015.06.26-09.41.22:531][197]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampDown_C_331' (it may have been removed)
+[2015.06.26-09.41.22:626][197]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampUp_C_335' (it may have been removed)
+[2015.06.26-09.41.22:722][197]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RightCorner_C_339' (it may have been removed)
+[2015.06.26-09.41.23:045][197]LogPlayLevel: [PIE] Compiling BP_FloorTile_LeftCorner before PIE...
+[2015.06.26-09.41.23:132][197]LogPlayLevel: [PIE] Compiling BP_FloorTile_RightCorner before PIE...
+[2015.06.26-09.41.23:218][197]LogPlayLevel: [PIE] Compiling HUD before PIE...
+[2015.06.26-09.41.23:324][197]LogPlayLevel: [PIE] Compiling RunGameMode before PIE...
+[2015.06.26-09.41.23:454][197]LogPlayLevel: [PIE] Compiling BP_FloorTile_RampDown before PIE...
+[2015.06.26-09.41.23:537][197]LogPlayLevel: [PIE] Compiling BP_FloorTile_RampUp before PIE...
+[2015.06.26-09.41.23:707][197]LogPlayLevel: PIE:  Blueprint regeneration took 2183 ms (10 blueprints)
+[2015.06.26-09.41.23:707][197]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:41:23 PM)
+[2015.06.26-09.41.23:708][197]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.41.23:710][197]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001944s)
+[2015.06.26-09.41.23:711][197]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.41.23:711][197]LogPlayLevel: PIE: World Init took: (0.001382s)
+[2015.06.26-09.41.23:711][197]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003640s)
+[2015.06.26-09.41.23:792][197]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.41.23:800][197]LogInit: FAudioDevice initialized.
+[2015.06.26-09.41.23:879][197]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.41.23:883][197]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.41.23
+[2015.06.26-09.41.23:883][197]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.41.23:883][197]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.41.23:883][197]LogWorld: Bringing up level for play took: 0.001804
+[2015.06.26-09.41.23:915][197]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 1.411
+[2015.06.26-09.41.23:979][198]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.068854 > MaxSimulationTimeStep (0.050) for 'RunCharacter_C_8'
+[2015.06.26-09.41.27:240][417]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.41.27:313][418]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003230DB20
+[2015.06.26-09.42.27:797][ 31]BlueprintLog: New page: Pre-PIE auto-recompile
+[2015.06.26-09.42.27:799][ 31]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.42.27:818][ 31]LogPlayLevel: [PIE] Compiling RunCharacter before PIE...
+[2015.06.26-09.42.28:344][ 31]LogPlayLevel: [PIE] Compiling BP_Blocker before PIE...
+[2015.06.26-09.42.28:432][ 31]LogPlayLevel: [PIE] Compiling BP_Items before PIE...
+[2015.06.26-09.42.28:544][ 31]LogPlayLevel: [PIE] Compiling BP_FloorTile before PIE...
+[2015.06.26-09.42.28:647][ 31]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_LeftCorner_C_405' (it may have been removed)
+[2015.06.26-09.42.28:811][ 31]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampDown_C_409' (it may have been removed)
+[2015.06.26-09.42.28:906][ 31]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampUp_C_413' (it may have been removed)
+[2015.06.26-09.42.29:002][ 31]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RightCorner_C_417' (it may have been removed)
+[2015.06.26-09.42.29:330][ 31]LogPlayLevel: [PIE] Compiling BP_FloorTile_LeftCorner before PIE...
+[2015.06.26-09.42.29:416][ 31]LogPlayLevel: [PIE] Compiling BP_FloorTile_RightCorner before PIE...
+[2015.06.26-09.42.29:503][ 31]LogPlayLevel: [PIE] Compiling HUD before PIE...
+[2015.06.26-09.42.29:611][ 31]LogPlayLevel: [PIE] Compiling RunGameMode before PIE...
+[2015.06.26-09.42.29:743][ 31]LogPlayLevel: [PIE] Compiling BP_FloorTile_RampDown before PIE...
+[2015.06.26-09.42.29:827][ 31]LogPlayLevel: [PIE] Compiling BP_FloorTile_RampUp before PIE...
+[2015.06.26-09.42.29:999][ 31]LogPlayLevel: PIE:  Blueprint regeneration took 2201 ms (10 blueprints)
+[2015.06.26-09.42.29:999][ 31]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:42:29 PM)
+[2015.06.26-09.42.30:000][ 31]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.42.30:002][ 31]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001959s)
+[2015.06.26-09.42.30:002][ 31]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.42.30:003][ 31]LogPlayLevel: PIE: World Init took: (0.001336s)
+[2015.06.26-09.42.30:003][ 31]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003530s)
+[2015.06.26-09.42.30:084][ 31]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.42.30:093][ 31]LogInit: FAudioDevice initialized.
+[2015.06.26-09.42.30:169][ 31]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.42.30:173][ 31]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.42.30
+[2015.06.26-09.42.30:173][ 31]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.42.30:174][ 31]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.42.30:174][ 31]LogWorld: Bringing up level for play took: 0.002057
+[2015.06.26-09.42.30:200][ 31]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 1.695
+[2015.06.26-09.42.30:269][ 32]LogCharacterMovement:Warning: GetSimulationTimeStep() - Max iterations 8 hit while remaining time 0.070212 > MaxSimulationTimeStep (0.050) for 'RunCharacter_C_8'
+[2015.06.26-09.42.34:674][314]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.42.34:749][315]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000002AEDB9C0
+[2015.06.26-09.42.35:557][372]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.42.35:558][372]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:42:35 PM)
+[2015.06.26-09.42.35:558][372]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.42.35:560][372]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001838s)
+[2015.06.26-09.42.35:561][372]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.42.35:561][372]LogPlayLevel: PIE: World Init took: (0.001354s)
+[2015.06.26-09.42.35:561][372]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003395s)
+[2015.06.26-09.42.35:642][372]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.42.35:650][372]LogInit: FAudioDevice initialized.
+[2015.06.26-09.42.35:682][372]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.42.35:685][372]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.42.35
+[2015.06.26-09.42.35:685][372]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.42.35:686][372]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.42.35:686][372]LogWorld: Bringing up level for play took: 0.001768
+[2015.06.26-09.42.35:711][372]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 -0.794
+[2015.06.26-09.42.52:028][360]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000003230F600
+[2015.06.26-09.45.11:964][ 95]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.45.12:266][ 95]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.45.12:584][ 95]BlueprintEditorCompileResults: Info [0825.30] Compile of RunCharacter successful! [in 620 ms]
+[2015.06.26-09.45.14:262][216]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.45.14:262][216]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:45:14 PM)
+[2015.06.26-09.45.14:262][216]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.45.14:264][216]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001767s)
+[2015.06.26-09.45.14:265][216]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.45.14:265][216]LogPlayLevel: PIE: World Init took: (0.001251s)
+[2015.06.26-09.45.14:265][216]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003199s)
+[2015.06.26-09.45.14:265][216]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.45.14:345][216]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.45.14:353][216]LogInit: FAudioDevice initialized.
+[2015.06.26-09.45.14:430][216]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.45.14:434][216]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.45.14
+[2015.06.26-09.45.14:434][216]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.45.14:434][216]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.45.14:434][216]LogWorld: Bringing up level for play took: 0.001820
+[2015.06.26-09.45.14:465][216]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 -0.043
+[2015.06.26-09.45.19:749][557]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000E31D300
+[2015.06.26-09.45.55:107][801]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.45.55:107][801]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:45:55 PM)
+[2015.06.26-09.45.55:108][801]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.45.55:110][801]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001922s)
+[2015.06.26-09.45.55:111][801]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.45.55:111][801]LogPlayLevel: PIE: World Init took: (0.001344s)
+[2015.06.26-09.45.55:111][801]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003466s)
+[2015.06.26-09.45.55:111][801]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.45.55:112][801]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
+[2015.06.26-09.45.55:195][801]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.45.55:203][801]LogInit: FAudioDevice initialized.
+[2015.06.26-09.45.55:235][801]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.45.55:239][801]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.45.55
+[2015.06.26-09.45.55:239][801]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.45.55:239][801]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.45.55:239][801]LogWorld: Bringing up level for play took: 0.001925
+[2015.06.26-09.45.55:269][801]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.761
+[2015.06.26-09.46.13:541][874]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000D86BBA0
+[2015.06.26-09.46.41:722][954]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.46.41:723][954]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:46:41 PM)
+[2015.06.26-09.46.41:723][954]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.46.41:725][954]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002135s)
+[2015.06.26-09.46.41:726][954]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.46.41:727][954]LogPlayLevel: PIE: World Init took: (0.001294s)
+[2015.06.26-09.46.41:727][954]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003627s)
+[2015.06.26-09.46.41:809][954]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.46.41:817][954]LogInit: FAudioDevice initialized.
+[2015.06.26-09.46.41:852][954]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.46.41:855][954]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.46.41
+[2015.06.26-09.46.41:855][954]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.46.41:856][954]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.46.41:856][954]LogWorld: Bringing up level for play took: 0.001859
+[2015.06.26-09.46.41:883][954]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 -0.626
+[2015.06.26-09.47.15:013][892]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001446F740
+[2015.06.26-09.47.38:581][586]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.47.38:873][586]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.47.39:192][586]BlueprintEditorCompileResults: Info [0971.91] Compile of RunCharacter successful! [in 610 ms]
+[2015.06.26-09.47.40:625][685]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.47.40:625][685]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:47:40 PM)
+[2015.06.26-09.47.40:625][685]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.47.40:628][685]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002136s)
+[2015.06.26-09.47.40:628][685]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.47.40:629][685]LogPlayLevel: PIE: World Init took: (0.001322s)
+[2015.06.26-09.47.40:629][685]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003659s)
+[2015.06.26-09.47.40:629][685]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.47.40:714][685]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.47.40:722][685]LogInit: FAudioDevice initialized.
+[2015.06.26-09.47.40:794][685]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.47.40:798][685]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.47.40
+[2015.06.26-09.47.40:798][685]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.47.40:798][685]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.47.40:798][685]LogWorld: Bringing up level for play took: 0.001859
+[2015.06.26-09.47.40:822][685]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.312
+[2015.06.26-09.47.43:581][863]Cmd: RestartLevel
+[2015.06.26-09.47.43:596][864]LogNet: Browse: /Game/ThirdPersonBP/Maps/Level2?restart
+[2015.06.26-09.47.43:596][864]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/Level2
+[2015.06.26-09.47.43:642][864]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000E31CF40
+[2015.06.26-09.47.43:661][864]Cmd: MEM
+[2015.06.26-09.47.43:713][864]LogMemory: Platform Memory Stats for Windows
+[2015.06.26-09.47.43:713][864]LogMemory: Process Physical Memory: 820.64 MB used, 821.99 MB peak
+[2015.06.26-09.47.43:713][864]LogMemory: Process Virtual Memory: 706.51 MB used, 707.25 MB peak
+[2015.06.26-09.47.43:713][864]LogMemory: Physical Memory: 5273.02 MB used, 16282.96 MB total
+[2015.06.26-09.47.43:713][864]LogMemory: Virtual Memory: 1388.32 MB used, 8388608.00 MB total
+[2015.06.26-09.47.43:713][864]LogMemory: 
+[2015.06.26-09.47.43:713][864]Allocator Stats for TBB: (not implemented)
+[2015.06.26-09.47.43:713][864]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.47.43:715][864]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002108s)
+[2015.06.26-09.47.43:716][864]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.47.43:717][864]LogPlayLevel: PIE: World Init took: (0.001751s)
+[2015.06.26-09.47.43:717][864]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.004049s)
+[2015.06.26-09.47.43:717][864]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.47.43:721][864]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.47.43
+[2015.06.26-09.47.43:721][864]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.47.43:721][864]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.47.43:721][864]LogWorld: Bringing up level for play took: 0.001740
+[2015.06.26-09.47.51:724][378]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001440C860
+[2015.06.26-09.47.52:482][430]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.47.52:483][430]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:47:52 PM)
+[2015.06.26-09.47.52:483][430]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.47.52:485][430]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001788s)
+[2015.06.26-09.47.52:486][430]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.47.52:486][430]LogPlayLevel: PIE: World Init took: (0.001225s)
+[2015.06.26-09.47.52:486][430]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003210s)
+[2015.06.26-09.47.52:565][430]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.47.52:573][430]LogInit: FAudioDevice initialized.
+[2015.06.26-09.47.52:608][430]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.47.52:612][430]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.47.52
+[2015.06.26-09.47.52:612][430]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.47.52:612][430]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.47.52:612][430]LogWorld: Bringing up level for play took: 0.001808
+[2015.06.26-09.47.52:645][430]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.135
+[2015.06.26-09.48.04:089][112]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x0000000037055EE0
+[2015.06.26-09.49.29:522][791]BlueprintLog: New page: Compile BP_FloorTile
+[2015.06.26-09.49.29:617][791]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_LeftCorner_C_499' (it may have been removed)
+[2015.06.26-09.49.29:718][791]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampDown_C_503' (it may have been removed)
+[2015.06.26-09.49.29:810][791]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'StaticMesh' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RampUp_C_507' (it may have been removed)
+[2015.06.26-09.49.29:903][791]LogBlueprint:Warning: USimpleConstructionScript::FixupRootNodeParentReferences() - Couldn't find inherited parent component 'DefaultSceneRoot' for 'Box' in BlueprintGeneratedClass 'REINST_BP_FloorTile_RightCorner_C_511' (it may have been removed)
+[2015.06.26-09.49.30:277][791]BlueprintEditorCompileResults: Info [1082.99] Compile of BP_FloorTile successful! [in 754 ms]
+[2015.06.26-09.49.32:692][982]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.49.32:692][982]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:49:32 PM)
+[2015.06.26-09.49.32:693][982]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.49.32:695][982]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002133s)
+[2015.06.26-09.49.32:696][982]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.49.32:696][982]LogPlayLevel: PIE: World Init took: (0.001282s)
+[2015.06.26-09.49.32:696][982]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003611s)
+[2015.06.26-09.49.32:781][982]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.49.32:789][982]LogInit: FAudioDevice initialized.
+[2015.06.26-09.49.32:845][982]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.49.32:848][982]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.49.32
+[2015.06.26-09.49.32:848][982]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.49.32:849][982]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.49.32:849][982]LogWorld: Bringing up level for play took: 0.001884
+[2015.06.26-09.49.32:877][982]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 0.364
+[2015.06.26-09.49.38:205][352]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000F66BC40
+[2015.06.26-09.50.30:502][ 72]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.50.30:804][ 72]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.50.30:805][ 72]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
+[2015.06.26-09.50.31:125][ 72]BlueprintEditorCompileResults: Info [1143.84] Compile of RunCharacter successful! [in 622 ms]
+[2015.06.26-09.50.31:931][123]LogPlayLevel: PIE:  No blueprints needed recompiling
+[2015.06.26-09.50.31:931][123]PIE: New page: PIE session: Level2 (Jun 26, 2015, 1:50:31 PM)
+[2015.06.26-09.50.31:932][123]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.50.31:933][123]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001878s)
+[2015.06.26-09.50.31:934][123]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.50.31:935][123]LogPlayLevel: PIE: World Init took: (0.001259s)
+[2015.06.26-09.50.31:935][123]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.003317s)
+[2015.06.26-09.50.31:935][123]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.50.32:020][123]LogInit: XAudio2 using 'Haut-parleurs (6- Logitech G930 Headset)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2015.06.26-09.50.32:027][123]LogInit: FAudioDevice initialized.
+[2015.06.26-09.50.32:101][123]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.50.32:105][123]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.50.32
+[2015.06.26-09.50.32:105][123]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.50.32:106][123]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.50.32:106][123]LogWorld: Bringing up level for play took: 0.001871
+[2015.06.26-09.50.32:138][123]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2 -0.375
+[2015.06.26-09.50.53:414][189]Cmd: RestartLevel
+[2015.06.26-09.50.53:430][190]LogNet: Browse: /Game/ThirdPersonBP/Maps/Level2?restart
+[2015.06.26-09.50.53:431][190]LogLoad: LoadMap: /Game/ThirdPersonBP/Maps/Level2
+[2015.06.26-09.50.53:479][190]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000000D86B600
+[2015.06.26-09.50.53:497][190]Cmd: MEM
+[2015.06.26-09.50.53:548][190]LogMemory: Platform Memory Stats for Windows
+[2015.06.26-09.50.53:548][190]LogMemory: Process Physical Memory: 832.13 MB used, 833.39 MB peak
+[2015.06.26-09.50.53:549][190]LogMemory: Process Virtual Memory: 722.71 MB used, 724.04 MB peak
+[2015.06.26-09.50.53:549][190]LogMemory: Physical Memory: 5289.05 MB used, 16282.96 MB total
+[2015.06.26-09.50.53:549][190]LogMemory: Virtual Memory: 1404.44 MB used, 8388608.00 MB total
+[2015.06.26-09.50.53:549][190]LogMemory: 
+[2015.06.26-09.50.53:549][190]Allocator Stats for TBB: (not implemented)
+[2015.06.26-09.50.53:549][190]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2
+[2015.06.26-09.50.53:551][190]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002261s)
+[2015.06.26-09.50.53:552][190]LogAIModule: Creating AISystem for world Level2
+[2015.06.26-09.50.53:553][190]LogPlayLevel: PIE: World Init took: (0.001685s)
+[2015.06.26-09.50.53:553][190]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/Level2.Level2 to /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 (0.004126s)
+[2015.06.26-09.50.53:553][190]LogWorld: Game class is 'RunGameMode_C'
+[2015.06.26-09.50.53:557][190]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2 up for play (max tick rate 0) at 2015.06.26-11.50.53
+[2015.06.26-09.50.53:557][190]LogActor:Warning: GameSession /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameSession_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.50.53:557][190]LogActor:Warning: GameNetworkManager /Game/ThirdPersonBP/Maps/UEDPIE_0_Level2.Level2:PersistentLevel.GameNetworkManager_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2015.06.26-09.50.53:557][190]LogWorld: Bringing up level for play took: 0.001730
+[2015.06.26-09.50.57:188][402]LogParticles: Destroying 0 GPU particle simulations for FXSystem 0x000000001FDEA840
+[2015.06.26-09.51.33:619][802]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.51.33:908][802]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.51.34:225][802]BlueprintEditorCompileResults: Info [1206.94] Compile of RunCharacter successful! [in 606 ms]
+[2015.06.26-09.52.26:551][245]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.54.22:270][811]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2015.06.26-09.54.33:677][472]LogEditorViewport: Clicking on Actor (double click): BP_Sky_Sphere_C (Sky Sphere)
+[2015.06.26-09.54.34:413][515]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2015.06.26-09.54.34:974][546]LogEditorViewport: Clicking on Actor (context menu): PlayerStart (Player Start)
+[2015.06.26-09.54.51:736][476]BlueprintLog: New page: Compile RunCharacter
+[2015.06.26-09.54.52:024][476]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharacterMovementComponent_1) Not registered. Aborting.
+[2015.06.26-09.54.52:024][476]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
+[2015.06.26-09.54.52:347][476]BlueprintEditorCompileResults: Info [1405.05] Compile of RunCharacter successful! [in 610 ms]
+[2015.06.26-09.56.42:959][386]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-09.56.42:959][386]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
+[2015.06.26-09.56.43:014][386]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/Level2' took 0.055
+[2015.06.26-09.56.43:020][386]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/RunCharacter] ([1] browsable assets)...
+[2015.06.26-09.56.43:042][386]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/RunCharacter.RunCharacter]
+[2015.06.26-09.56.43:042][386]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/RunCharacter]
+[2015.06.26-09.56.43:251][386]LogSavePackage: Save=121.523842ms
+[2015.06.26-09.56.43:251][386]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/RunCharacter_Auto1A8FFED5046AFC3EA70FD1BB20432D0CD.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/RunCharacter_Auto1.uasset'
+[2015.06.26-09.56.43:256][386]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonBP/Blueprints/RunGameMode] ([1] browsable assets)...
+[2015.06.26-09.56.43:256][386]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/RunGameMode]
+[2015.06.26-09.56.43:330][386]LogSavePackage: Save=68.850586ms
+[2015.06.26-09.56.43:330][386]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/RunGameMode_Auto1DB936C374B95B9ED90D2CF9A50F6EBF3.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/RunGameMode_Auto1.uasset'
+[2015.06.26-09.56.43:335][386]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile] ([1] browsable assets)...
+[2015.06.26-09.56.43:355][386]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/ThirdPersonBP/Blueprints/BP_FloorTile.BP_FloorTile]
+[2015.06.26-09.56.43:355][386]OBJ SavePackage: Finished generating thumbnails for package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile]
+[2015.06.26-09.56.43:524][386]LogSavePackage: Save=135.534088ms
+[2015.06.26-09.56.43:524][386]LogSavePackage: Moving 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/BP_FloorTile_Auto1CAD1135348C0114FD7CBBEB387A6AC2E.tmp' to 'D:/Repos/Catopsys/Engines/trunk/UE4/MazeRunner/Saved/Autosaves/Game/ThirdPersonBP/Blueprints/BP_FloorTile_Auto1.uasset'
+[2015.06.26-09.56.43:525][386]LogFileHelpers: Auto-saving content packages took 0.510
+[2015.06.26-10.06.44:271][925]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2015.06.26-10.06.44:271][925]LogActorComponent: UnregisterComponent: (/Engine/Transient.RotatingMovement447CCFE943B8101E285B0B86423D6EBA) Not registered. Aborting.
+[2015.06.26-10.06.44:318][925]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/Level2' took 0.048
+[2015.06.26-10.06.44:324][925]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ThirdPersonBP/Blueprints/BP_FloorTile] ([1] browsable assets)...
+[2015.06.26-1
